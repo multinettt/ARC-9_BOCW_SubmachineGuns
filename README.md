@@ -17,7 +17,7 @@
 
 ## Personalization:
 
-Personalization by means of stickers camo is available. You can grab some cold war camos from these two workshop links below if you'd like.
+Personalization by means of stickers and camo is available. You can grab some cold war camos from these two workshop links below if you'd like.
 
 [Multiplayer Camo Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=2989163938)
 

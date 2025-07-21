@@ -1,23 +1,23 @@
 --=============================================================================
 --   ARC9 CALL OF DUTY: BLACK OPS COLD WAR
---   TACTICAL RIFLES DLC
---   CARV.2
+--   SUBMACHINE GUNS
+--   MP5
 --=============================================================================
 --[[
 --   SWEP INFORMATION:
 
 --   BASE  : ARC9
 --   BUILD : v2025.7
---   SR.NO : 29481/860
+--   SR.NO : 
 
 
-  .oooooo.         .o.       ooooooooo.   oooooo     oooo       .oooo.   
- d8P'  `Y8b       .888.      `888   `Y88.  `888.     .8'      .dP""Y88b  
-888              .8"888.      888   .d88'   `888.   .8'             ]8P' 
-888             .8' `888.     888ooo88P'     `888. .8'            .d8P'  
-888            .88ooo8888.    888`88b.        `888.8'           .dP'     
-`88b    ooo   .8'     `888.   888  `88b.       `888'      .o. .oP     .o 
- `Y8bood8P'  o88o     o8888o o888o  o888o       `8'       Y8P 8888888888 
+ooo        ooooo ooooooooo.     oooooooo 
+`88.       .888' `888   `Y88.  dP""""""" 
+ 888b     d'888   888   .d88' d88888b.   
+ 8 Y88. .P  888   888ooo88P'      `Y88b  
+ 8  `888'   888   888               ]88  
+ 8    Y     888   888         o.   .88P  
+o8o        o888o o888o        `8bd88P'   
 
 
 ]]
@@ -29,33 +29,35 @@ SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Black Ops Cold War"
-SWEP.SubCategory = "Tactical Rifles"
+SWEP.SubCategory = "Submachine Guns"
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "CARV.2"
-SWEP.TrueName = "CARV.2"
-SWEP.Class = "Tactical Rifle"
+SWEP.PrintName = "MP5"
+SWEP.TrueName = "MP5K"
+SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
-    Manufacturer = "Kürr & Schmidt",
-    Calibre = "4.73x33mm Caseless",
+    Manufacturer = "Heckler & Koch",
+    Calibre = "9x19mm Parabellum",
     Mechanism = "Roller delayed blowback",
     Country = "Germany",
-    Year = 1968
+    Year = 1976
 }
 
 SWEP.Credits = {
-     Author = "multinett",
-     --Contact = "https://steamcommunity.com/id/multinett/"
+    Author = "multinett",
+    --Contact = "https://steamcommunity.com/id/multinett/"
 }
 
 SWEP.Description = [[Burst fire tactical rifle. Moderate firepower with improved recoil control and a larger ammo pool. Effective at mid-to-long range.
 
-The CARV.2 is a bullpup tactical rifle featured in Call of Duty: Black Ops Cold War. It was added on May 6th, 2021 as part of the Season Three update.]]
+The MP5 is a submachine gun featured in many games of the Modern Warfare series, as well as in Call of Duty: Black Ops II, Call of Duty: Mobile and Call of Duty: Black Ops Cold War.
+
+The MP5 returns in Call of Duty: Black Ops Cold War.]]
 
 SWEP.UseHands = true
 
-SWEP.ViewModel = "models/weapons/arc9/c_arc9_carv2_bocw.mdl"
-SWEP.WorldModel = "models/weapons/arc9/c_arc9_carv2_bocw.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_arc9_mp5_bocw.mdl"
+SWEP.WorldModel = "models/weapons/arc9/c_arc9_mp5_bocw.mdl"
 
 SWEP.Slot = 2
 
@@ -117,7 +119,7 @@ SWEP.AlwaysPhysBullet = true
 
 SWEP.PhysBulletMuzzleVelocity = 605 * 39.37
 SWEP.PhysBulletDrag = 1
-SWEP.PhysBulletCARV2ity = 1
+SWEP.PhysBulletMP5ity = 1
 SWEP.PhysBulletDontInheritPlayerVelocity = false -- Set to true to disable "Browning Effect"
 
 -------------------------- TRACERS
@@ -133,8 +135,8 @@ SWEP.TracerSize = 0.5
 SWEP.Ammo = "ar2" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 0 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 45 -- Self-explanatory.
-SWEP.SupplyLimit = 3 -- Amount of magazines of ammo this gun can take from an ARC-9 supply crate.
+SWEP.ClipSize = 30 -- Self-explanatory.
+SWEP.SupplyLimit = 4 -- Amount of magazines of ammo this gun can take from an ARC-9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
 SWEP.ForceDefaultClip = nil -- Set to force a default amount of ammo this gun can have. Otherwise, this is controlled by console variables.
@@ -151,7 +153,7 @@ SWEP.CanFireUnderwater = false -- This weapon can shoot while underwater.
 SWEP.ShouldDropMag = false
 SWEP.ShouldDropMagEmpty = false
 
-SWEP.DropMagazineModel = "models/weapons/arc9/atts/bocw_carv2_magazine.mdl" -- Set to a string or table to drop this magazine when reloading.
+SWEP.DropMagazineModel = "models/weapons/arc9/atts/bocw_mp5_magazine.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {} -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
 SWEP.DropMagazineSkin = 0 -- Model skin of mag.
@@ -176,18 +178,10 @@ SWEP.RPM = 909
 
 SWEP.Firemodes = {
     {
-        Mode = 3,
-        RunawayBurst = true,
-        PostBurstDelay = 0.125,
-        FirstShootSound = "ARC9_BOCW.CARV2_fire_burst",
-        FirstShootSoundSilenced = "ARC9_BOCW.CARV2_fire_silenced_burst",
-        ShootSound = nil
+        Mode = -1,
     },
     {
         Mode = 1,
-        FirstShootSound = nil,
-        ShootSound = "ARC9_BOCW.CARV2_fire",
-        ShootSoundSilenced = "ARC9_BOCW.CARV2_fire_silenced"
     },
 }
 
@@ -286,14 +280,14 @@ SWEP.ShootVolumeActual = 1
 SWEP.ShootPitch = 100
 SWEP.ShootPitchVariation = 0.05
 
---SWEP.FirstShootSound = "ARC9_BOCW.CARV2_fire_burst"
---SWEP.ShootSound = nil
---SWEP.ShootSoundIndoor = "ARC9_BOCW.CARV2_fire_int_decay"                  -- Fire indoors
---SWEP.ShootSoundSilenced = "ARC9_BOCW.CARV2_fire_silenced"                    -- Fire silenced
+--SWEP.FirstShootSound = nil
+SWEP.ShootSound = "ARC9_BOCW.MP5_fire"
+--SWEP.ShootSoundIndoor = "ARC9_BOCW.MP5_fire_int_decay"                  -- Fire indoors
+SWEP.ShootSoundSilenced = "ARC9_BOCW.MP5_fire_silenced"                    -- Fire silenced
 SWEP.ShootSoundIndoorSilenced = nil             -- Fire indoors silenced
 SWEP.FirstShootSoundSilenced = nil              -- First fire silenced
 SWEP.FirstDistantShootSound = nil               -- First distant fire
-SWEP.DistantShootSound = "ARC9_BOCW.Shared_Decay_Close_M16"                     -- Distant fire
+SWEP.DistantShootSound = "ARC9_BOCW.Shared_Decay_Close_Pistol"                     -- Distant fire
 SWEP.DistantShootSoundIndoor = nil              -- Distant fire indoors
 SWEP.DistantShootSoundSilenced = "ARC9_BOCW.Shared_Decay_Close_Suppressor"            -- Distant fire silenced
 SWEP.DistantShootSoundIndoorSilenced = nil      -- Distant fire indoors silenced
@@ -360,7 +354,10 @@ SWEP.BobSprintMult = 0.1
 -------------------------- VISUALS
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
-    "tag_bullet_animate"
+    "tag_bullet_deplete_sqtl_00_animate",
+    "tag_bullet_deplete_sqtl_01_animate",
+    "tag_bullet_deplete_sqtl_02_animate",
+    "tag_bullet_deplete_sqtl_03_animate"
 }
 SWEP.CaseBones = {}
 -- Unlike BulletBones, these bones are determined by the missing bullet amount when reloading
@@ -374,11 +371,8 @@ SWEP.CaseBGs = {}
 SWEP.StripperClipBGs = {}
 
 SWEP.HideBones = {
-    "tag_bullet_deplete_sqtl_01_animate"
 } -- bones to hide in third person and customize menu. {"list", "of", "bones"}
 SWEP.ReloadHideBoneTables = {
-    [1] = {"tag_clip1"},
-    [2] = {"tag_clip", "tag_bullet_animate"} -- works only with TPIK
 }
 
 SWEP.PoseParameters = {} -- Poseparameters to manage. ["parameter"] = starting value.
@@ -429,8 +423,8 @@ SWEP.SightMidPoint = {
 
 -- Position for customizing
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(8, 38, 5)
-SWEP.CustomizeRotateAnchor = Vector(8, 0, -5)
+SWEP.CustomizePos = Vector(11, 35, 5)
+SWEP.CustomizeRotateAnchor = Vector(11, 0, -5)
 
 SWEP.CustomizeSnapshotFOV = 70
 SWEP.CustomizeSnapshotPos = Vector(0, 20, 0)
@@ -500,7 +494,7 @@ SWEP.AttachmentElements = {
             {11, 1},
         }
     },
-    ["barrel_rapidfire"] = {
+    ["barrel_extended"] = {
         Bodygroups = {
             {4, 2},
         },
@@ -520,7 +514,7 @@ SWEP.AttachmentElements = {
             },
         },
     },
-    ["barrel_striketeam"] = {
+    ["barrel_reinforced"] = {
         Bodygroups = {
             {4, 2},
         },
@@ -530,7 +524,7 @@ SWEP.AttachmentElements = {
             },
         },
     },
-    ["barrel_matchgrade"] = {
+    ["barrel_ranger"] = {
         Bodygroups = {
             {4, 2},
         },
@@ -540,7 +534,7 @@ SWEP.AttachmentElements = {
             }
         },
     },
-    ["barrel_titanium"] = {
+    ["barrel_rifle"] = {
         Bodygroups = {
             {4, 2},
         },
@@ -618,7 +612,7 @@ SWEP.Attachments = {
     {
         PrintName = "OPTIC", -- print name
         Bone = "tag_weapon",
-        Pos = Vector(2, 0, 5.96),
+        Pos = Vector(4.5, 0, 5.35),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
         Category = {"bocw_optic"},
@@ -630,17 +624,16 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        Category = {"bocw_carv2_muzzle"},
-        Installed = "bocw_carv2_muzzle_base",
-        Integral = "bocw_carv2_muzzle_base",
+        Category = {"bocw_mp5_muzzle"},
+        Installed = "bocw_mp5_muzzle_base",
     },
     {
         PrintName = "BARREL",
         Bone = "tag_barrel",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, 0.325),
-        Category = {"bocw_carv2_barrel"},
+        Icon_Offset = Vector(2, 0, 0),
+        Category = {"bocw_mp5_barrel"},
         InstalledElements = {"barrelgone"},
     },
     {
@@ -657,15 +650,15 @@ SWEP.Attachments = {
         Pos = Vector(-10.3, -4.42, 6.3),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(20.25, 4.5, -5),
-        Category = {"bocw_carv2_underbarrel"},
+        Category = {"bocw_mp5_underbarrel"},
     },
     {
         PrintName = "MAGAZINE",
         Bone = "tag_clip",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, -1.5),
-        Category = {"bocw_carv2_mag"},
+        Icon_Offset = Vector(0.25, 0, -1),
+        Category = {"bocw_mp5_mag"},
         InstalledElements = {"maggone"},
     },
     {
@@ -673,16 +666,16 @@ SWEP.Attachments = {
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(-0.25, 0, -0.75),
-        Category = {"bocw_carv2_wrap"},
+        Icon_Offset = Vector(-1.25, 0, -1.5),
+        Category = {"bocw_mp5_wrap"},
     },
     {
         PrintName = "STOCK",
-        Bone = "tag_stock",
+        Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, 0),
-        Category = {"bocw_carv2_stock"},
+        Icon_Offset = Vector(-4, 0, 3.2),
+        Category = {"bocw_mp5_stock"},
         InstalledElements = {"stockgone"},
     },
     {
@@ -694,76 +687,20 @@ SWEP.Attachments = {
     {
         PrintName = "STICKER 1",
         Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_carv2_sticker1.mdl",
+        StickerModel = "models/weapons/arc9/stickers/bocw_mp5_sticker1.mdl",
         CosmeticOnly = true,
     },
     {
         PrintName = "STICKER 2",
         Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_carv2_sticker2.mdl",
+        StickerModel = "models/weapons/arc9/stickers/bocw_mp5_sticker2.mdl",
         CosmeticOnly = true,
-        ExcludeElements = {"optic_mount"}
-    },
-    {
-        PrintName = "STICKER 2",
-        Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_carv2_sticker2_opticrail.mdl",
-        CosmeticOnly = true,
-        RequireElements = {"optic_mount"}
     },
     {
         PrintName = "STICKER 3",
         Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_carv2_sticker3.mdl",
+        StickerModel = "models/weapons/arc9/stickers/bocw_mp5_sticker3.mdl",
         CosmeticOnly = true,
-    },
-    {
-        PrintName = "STICKER 4", 
-        Bone = "tag_clip",
-        Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_carv2_sticker4.mdl",
-        CosmeticOnly = true,
-        ExcludeElements = {"carv2_mag_ext", "carv2_mag_dual", "carv2_mag_mix"}
-    },
-    {
-        PrintName = "STICKER 4", 
-        Bone = "tag_clip",
-        Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_carv2_sticker4_ext.mdl",
-        CosmeticOnly = true,
-        RequireElements = {"bocw_carv2_magazine_ext1"}
-    },
-    {
-        PrintName = "STICKER 4", 
-        Bone = "tag_clip",
-        Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_carv2_sticker4_extpro.mdl",
-        CosmeticOnly = true,
-        RequireElements = {"bocw_carv2_magazine_extpro"}
-    },
-    {
-        PrintName = "STICKER 4", 
-        Bone = "tag_clip",
-        Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_carv2_sticker4_dual.mdl",
-        CosmeticOnly = true,
-        RequireElements = {"carv2_mag_dual"}
-    },
-    {
-        PrintName = "STICKER 4", 
-        Bone = "tag_clip",
-        Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_carv2_sticker4_mix.mdl",
-        CosmeticOnly = true,
-        RequireElements = {"bocw_carv2_magazine_mix1"}
-    },
-    {
-        PrintName = "STICKER 4", 
-        Bone = "tag_clip",
-        Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_carv2_sticker4_mixpro.mdl",
-        CosmeticOnly = true,
-        RequireElements = {"bocw_carv2_magazine_mixpro"}
     },
 }
 
@@ -771,30 +708,21 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
 
     local vm = data.model
     local attached = data.elements
-
-    if attached["bocw_xm4_body"] then
-        vm:SetBodygroup(6, 1) -- set correct rail mount for body attachments
-    end
-
-    if attached["bocw_body_flashlight_west"] then
-        vm:SetBodygroup(6, 1)
-        vm:SetBodygroup(7, 1)
-    end
 end
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     
     local elements = swep:GetElements()
 
-    if elements["carv2_mag_ext"] then
+    if elements["mp5_mag_ext"] then
         return anim .. "_ext"
     end
 
-    if elements["carv2_mag_dual"] then
+    if elements["mp5_mag_dual"] then
         return anim .. "_dual"
     end
 
-    if elements["carv2_mag_mix"] then
+    if elements["mp5_mag_mix"] then
         return anim .. "_mix"
     end
 end
@@ -853,9 +781,7 @@ SWEP.Animations = {
     ["ready"] = {
         Source = {"ready"},
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_charginghandle_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_charginghandle", t = 0.1 },
-            { s = "ARC9_BOCW.CARV2_reload_end", t = 0.9 },
+            { s = "ARC9_BOCW.MP5_ready_boltrelease", t = 0.3 },
         },
         IKTimeLine = {
             {
@@ -905,14 +831,15 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-        Time = 2.5,
+        Time = 2.62,
         NoMagSwap = true,
         MinProgress = 0.75,
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_reload_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_magout", t = 0.2 },
-            { s = "ARC9_BOCW.CARV2_reload_magin", t = 1.2 },
-            { s = "ARC9_BOCW.CARV2_reload_end", t = 2 },
+            { s = "ARC9_BOCW.MP5_reload_boltgrab", t = 0.1 },
+            { s = "ARC9_BOCW.MP5_reload_boltback", t = 0.15 },
+            { s = "ARC9_BOCW.MP5_reload_magout", t = 0.5 },
+            { s = "ARC9_BOCW.MP5_reload_magin", t = 1.7 },
+            { s = "ARC9_BOCW.MP5_reload_boltrelease", t = 2.1 },
         },
         IKTimeLine = {
             {
@@ -939,18 +866,16 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        Time = 3.42,
-        MinProgress = 0.55,
+        Time = 3.75,
+        MinProgress = 0.6,
         DropMagAt = 0.6,
         MagSwapTime = 1,
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_reload_empty_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_magout", t = 0.2 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_maginstart", t = 1 },
-            { s = "ARC9_BOCW.CARV2_reload_magin", t = 1.2 },
-            { s = "ARC9_BOCW.CARV2_charginghandle_start", t = 2 },
-            { s = "ARC9_BOCW.CARV2_charginghandle", t = 2.2 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_end", t = 2.8 },
+            { s = "ARC9_BOCW.MP5_reload_boltgrab", t = 0.1 },
+            { s = "ARC9_BOCW.MP5_reload_boltback", t = 0.15 },
+            { s = "ARC9_BOCW.MP5_reload_magout", t = 0.8 },
+            { s = "ARC9_BOCW.MP5_reload_magin", t = 1.95 },
+            { s = "ARC9_BOCW.MP5_reload_boltrelease", t = 2.6 },
         },
         IKTimeLine = {
             {
@@ -977,13 +902,13 @@ SWEP.Animations = {
     },
     ["reload_ext"] = {
         Source = "reload_ext",
-        Time = 2.5,
+        Time = 2.62,
         MinProgress = 0.7,
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_reload_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_ext_magout", t = 0.3 },
-            { s = "ARC9_BOCW.CARV2_reload_ext_magin", t = 1.2 },
-            { s = "ARC9_BOCW.CARV2_reload_end", t = 2 },
+            { s = "ARC9_BOCW.MP5_reload_start", t = 0 },
+            { s = "ARC9_BOCW.MP5_reload_ext_magout", t = 0.3 },
+            { s = "ARC9_BOCW.MP5_reload_ext_magin", t = 1.2 },
+            { s = "ARC9_BOCW.MP5_reload_end", t = 2 },
         },
         IKTimeLine = {
             {
@@ -1010,17 +935,17 @@ SWEP.Animations = {
     },
     ["reload_empty_ext"] = {
         Source = "reload_ext_empty",
-        Time = 3.42,
+        Time = 3.75,
         MinProgress = 0.55,
         MagSwapTime = 1,
         DropMagAt = 0.6,
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_reload_empty_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_ext_empty_magout", t = 0.3 },
-            { s = "ARC9_BOCW.CARV2_reload_ext_magin", t = 1.2 },
-            { s = "ARC9_BOCW.CARV2_charginghandle_start", t = 2.2 },
-            { s = "ARC9_BOCW.CARV2_charginghandle", t = 2.2 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_end", t = 2.8 },
+            { s = "ARC9_BOCW.MP5_reload_empty_start", t = 0 },
+            { s = "ARC9_BOCW.MP5_reload_ext_empty_magout", t = 0.3 },
+            { s = "ARC9_BOCW.MP5_reload_ext_magin", t = 1.2 },
+            { s = "ARC9_BOCW.MP5_charginghandle_start", t = 2.2 },
+            { s = "ARC9_BOCW.MP5_charginghandle", t = 2.2 },
+            { s = "ARC9_BOCW.MP5_reload_empty_end", t = 2.8 },
         },
         IKTimeLine = {
             {
@@ -1047,13 +972,13 @@ SWEP.Animations = {
     },
     ["reload_dual"] = {
         Source = "reload_dual1",
-        Time = 2.5,
+        Time = 2.62,
         MinProgress = 0.6,
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_reload_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_magout", t = 0.2 },
-            { s = "ARC9_BOCW.CARV2_reload_magin", t = 0.9 },
-            { s = "ARC9_BOCW.CARV2_reload_end", t = 2 },
+            { s = "ARC9_BOCW.MP5_reload_start", t = 0 },
+            { s = "ARC9_BOCW.MP5_reload_magout", t = 0.2 },
+            { s = "ARC9_BOCW.MP5_reload_magin", t = 0.9 },
+            { s = "ARC9_BOCW.MP5_reload_end", t = 2 },
         },
         IKTimeLine = {
             {
@@ -1080,13 +1005,13 @@ SWEP.Animations = {
     },
     ["1_reload_dual"] = {
         Source = "reload_dual2",
-        Time = 2.5,
+        Time = 2.62,
         MinProgress = 0.65,
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_reload_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_magout", t = 0.2 },
-            { s = "ARC9_BOCW.CARV2_reload_magin", t = 0.9 },
-            { s = "ARC9_BOCW.CARV2_reload_end", t = 2 },
+            { s = "ARC9_BOCW.MP5_reload_start", t = 0 },
+            { s = "ARC9_BOCW.MP5_reload_magout", t = 0.2 },
+            { s = "ARC9_BOCW.MP5_reload_magin", t = 0.9 },
+            { s = "ARC9_BOCW.MP5_reload_end", t = 2 },
         },
         IKTimeLine = {
             {
@@ -1113,16 +1038,16 @@ SWEP.Animations = {
     },
     ["reload_empty_dual"] = {
         Source = "reload_dual1_empty",
-        Time = 3.42,
+        Time = 3.75,
         MinProgress = 0.5,
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_reload_empty_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_magout", t = 0.2 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_maginstart", t = 0.7 },
-            { s = "ARC9_BOCW.CARV2_reload_magin", t = 0.9 },
-            { s = "ARC9_BOCW.CARV2_charginghandle_start", t = 2.1 },
-            { s = "ARC9_BOCW.CARV2_charginghandle", t = 2.1 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_end", t = 2.7 },
+            { s = "ARC9_BOCW.MP5_reload_empty_start", t = 0 },
+            { s = "ARC9_BOCW.MP5_reload_empty_magout", t = 0.2 },
+            { s = "ARC9_BOCW.MP5_reload_empty_maginstart", t = 0.7 },
+            { s = "ARC9_BOCW.MP5_reload_magin", t = 0.9 },
+            { s = "ARC9_BOCW.MP5_charginghandle_start", t = 2.1 },
+            { s = "ARC9_BOCW.MP5_charginghandle", t = 2.1 },
+            { s = "ARC9_BOCW.MP5_reload_empty_end", t = 2.7 },
         },
         IKTimeLine = {
             {
@@ -1149,87 +1074,17 @@ SWEP.Animations = {
     },
     ["1_reload_empty_dual"] = {
         Source = "reload_dual2_empty",
-        Time = 3.42,
+        Time = 3.75,
         MinProgress = 0.5,
         DropMagAt = 1.1,
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_reload_empty_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_magout", t = 0.2 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_maginstart", t = 0.7 },
-            { s = "ARC9_BOCW.CARV2_reload_magin", t = 0.9 },
-            { s = "ARC9_BOCW.CARV2_charginghandle_start", t = 2.1 },
-            { s = "ARC9_BOCW.CARV2_charginghandle", t = 2.1 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_end", t = 2.7 },
-        },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.1,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.85,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.95,
-                lhik = 1,
-                rhik = 0
-            },
-        },
-    },
-    ["reload_mix"] = {
-        Source = "reload_mix",
-        Time = 2.5,
-        MinProgress = 0.7,
-        EventTable = {
-            { s = "ARC9_BOCW.CARV2_reload_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_magout", t = 0.2 },
-            { s = "ARC9_BOCW.CARV2_reload_magin", t = 1 },
-            { s = "ARC9_BOCW.CARV2_reload_end", t = 2 },
-        },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.15,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.8,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.9,
-                lhik = 1,
-                rhik = 0
-            },
-        },
-    },
-    ["reload_empty_mix"] = {
-        Source = "reload_mix_empty",
-        Time = 3.42,
-        MinProgress = 0.55,
-        MagSwapTime = 1,
-        EventTable = {
-            { s = "ARC9_BOCW.CARV2_reload_empty_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_magout", t = 0.3 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_maginstart", t = 0.8 },
-            { s = "ARC9_BOCW.CARV2_reload_magin", t = 1 },
-            { s = "ARC9_BOCW.CARV2_charginghandle_start", t = 2.1 },
-            { s = "ARC9_BOCW.CARV2_charginghandle", t = 2.1 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_end", t = 2.8 },
+            { s = "ARC9_BOCW.MP5_reload_empty_start", t = 0 },
+            { s = "ARC9_BOCW.MP5_reload_empty_magout", t = 0.2 },
+            { s = "ARC9_BOCW.MP5_reload_empty_maginstart", t = 0.7 },
+            { s = "ARC9_BOCW.MP5_reload_magin", t = 0.9 },
+            { s = "ARC9_BOCW.MP5_charginghandle_start", t = 2.1 },
+            { s = "ARC9_BOCW.MP5_charginghandle", t = 2.1 },
+            { s = "ARC9_BOCW.MP5_reload_empty_end", t = 2.7 },
         },
         IKTimeLine = {
             {
@@ -1271,14 +1126,9 @@ SWEP.Animations = {
     },
     ["enter_inspect"] = {
         Source = "inspect",
+        Time = 4.5,
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_inspect_part1", t = 0 },
-            { s = "ARC9_BOCW.CARV2_inspect_part2", t = 1.1 },
-            { s = "ARC9_BOCW.CARV2_inspect_part3", t = 2 },
-            { s = "ARC9_BOCW.CARV2_inspect_part4", t = 2.7 },
-            { s = "ARC9_BOCW.CARV2_inspect_part5", t = 4.5 },
-            { s = "ARC9_BOCW.CARV2_inspect_part6", t = 5.5 },
-            { s = "ARC9_BOCW.CARV2_inspect_part7", t = 6.8 }
+            { s = "ARC9_BOCW.MP5_inspect", t = 0 },
         },
         IKTimeLine = {
             {
@@ -1310,14 +1160,9 @@ SWEP.Animations = {
     },
     ["enter_inspect_ext"] = {
         Source = "inspect_ext",
+        Time = 4.5,
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_inspect_part1", t = 0 },
-            { s = "ARC9_BOCW.CARV2_inspect_part2", t = 1.1 },
-            { s = "ARC9_BOCW.CARV2_inspect_part3", t = 2 },
-            { s = "ARC9_BOCW.CARV2_inspect_part4", t = 2.7 },
-            { s = "ARC9_BOCW.CARV2_inspect_part5", t = 4.5 },
-            { s = "ARC9_BOCW.CARV2_inspect_part6", t = 5.5 },
-            { s = "ARC9_BOCW.CARV2_inspect_part7", t = 6.8 }
+            { s = "ARC9_BOCW.MP5_inspect", t = 0 },
         },
         IKTimeLine = {
             {

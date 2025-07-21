@@ -3289,3 +3289,28 @@ ATT.SpeedMultSighted = 1.1
 ATT.SpreadMultHipFire = 1.3
 
 ARC9.LoadAttachment(ATT, "bocw_bullfrog_stock_kgbskeletal")
+
+--
+
+ATT = {}
+
+ATT.PrintName = "MP5 Muzzle Device"
+ATT.CompactName = "MP5 MUZZLE"
+ATT.Icon = Material("entities/acwatt_bocw.png", "mips smooth")
+ATT.Description = [[Default MP5 muzzle device.]]
+
+ATT.SortOrder = -10
+
+ATT.Model = "models/weapons/arc9/atts/bocw_mp5_muzzle.mdl"
+
+ATT.Category = {"bocw_mp5_muzzle"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride_Priority = 100
+ATT.MuzzleDevice = true
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_mp5_muzzle_base")

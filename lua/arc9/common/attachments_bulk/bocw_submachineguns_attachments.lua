@@ -81,7 +81,7 @@ ATT.CompactName = [[9.5" HEAVY]]
 ATT.Icon = Material("entities/bocw_atts/barrels/mp5_reinforced.png", "mips smooth")
 ATT.Description = [[Heavy profile barrel button rifled to improve bullet velocity and damage range.
 
-The Reinforced Heavy barrel is an attachment type available for NATO related Assault Rifles, Submachine Guns, Pistols and Shotguns in Call of Duty: Black Ops Cold War. It increases damage range alongside increasing bullet velocity at the cost of movement speed while aiming and a minor decrease of sprinting speed, while for Shotguns it loses the bullet velocity in exchange for a fire rate increase. The Warsaw Pact equivalent is the VDV Reinforced Barrel, while the Krig 6 has access to the Contour Barrel in place of the Reinforced Heavy Barrel.]]
+The Reinforced Heavy barrel is an attachment type available for NATO related Assault Rifles, Submachine Guns, Pistols and Shotguns in Call of Duty: Black Ops Cold War. It increases damage range alongside increasing bullet velocity at the cost of movement speed while aiming and a minor decrease of sprinting speed, while for Shotguns it loses the bullet velocity in exchange for a fire rate increase. The Warsaw Pact equivalent is the VDV Reinforced Barrel.]]
 
 ATT.SortOrder = 9.5
 
@@ -534,6 +534,8 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.SpeedMultSights = 1.1
 
+ATT.ActivateElements = {"stockmountgone"}
+
 ARC9.LoadAttachment(ATT, "bocw_mp5_stock_tactical")
 
 ATT = {}
@@ -580,7 +582,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.SpeedMult = 1.05
 
-ATT.ActivateElements = {"stockgone"}
+ATT.ActivateElements = {"stockmountgone"}
 
 ARC9.LoadAttachment(ATT, "bocw_mp5_stock_duster")
 
@@ -633,6 +635,8 @@ ATT.SpeedMultSighted = 1.15
 
 ATT.SpreadMultHipFire = 1.15
 
+ATT.ActivateElements = {"stockmountgone"}
+
 ARC9.LoadAttachment(ATT, "bocw_mp5_stock_sascombat")
 
 ATT = {}
@@ -658,6 +662,8 @@ ATT.SprintToFireTimeMult = 0.7
 ATT.SpeedMultSighted = 1.1
 
 ATT.SpreadMultHipFire = 1.3
+
+ATT.ActivateElements = {"stockmountgone"}
 
 ARC9.LoadAttachment(ATT, "bocw_mp5_stock_raider")
 --[[

@@ -8,7 +8,7 @@
 
 --   BASE  : ARC9
 --   BUILD : v2025.7
---   SR.NO : 
+--   SR.NO : 89-01990
 
 
 ooo        ooooo ooooooooo.     oooooooo 
@@ -204,7 +204,7 @@ SWEP.Spread = math.rad(1.3 / 37.5)
 SWEP.SpreadMultRecoil = 1.2
 
 SWEP.SpreadMultSights = 0.1
-SWEP.SpreadAddHipFire = math.rad(250 / 37.5)
+SWEP.SpreadAddHipFire = math.rad(200 / 37.5)
 SWEP.SpreadAddMove = math.rad(100 / 37.5)
 SWEP.SpreadAddMidAir = 0.1
 -- SWEP.SpreadAddShooting = math.rad(5 / 37.5) -- math.rad(108 / 37.5)
@@ -479,6 +479,11 @@ SWEP.AttachmentElements = {
             {5, 1},
         }
     },
+    ["stockmountgone"] = {
+        Bodygroups = {
+            {6, 1},
+        }
+    },
     ["bayonetgone"] = {
         Bodygroups = {
             {9, 1},
@@ -500,7 +505,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [2] = {
-                Pos = Vector(-3.085, 0, 0),
+                Pos = Vector(1.889, 0, 0),
             },
         },
     },
@@ -510,7 +515,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.338, 0, 0),
+                Pos = Vector(3, 0, 0),
             },
         },
     },
@@ -520,7 +525,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [2] = {
-                Pos = Vector(-0.31, 0, 0),
+                Pos = Vector(1.889, 0, 0),
             },
         },
     },
@@ -530,17 +535,17 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [2] = {
-                Pos = Vector(3.23, 0, 0),
+                Pos = Vector(1.889, 0, 0),
             }
         },
     },
-    ["barrel_rifle"] = {
+    ["barrel_rifled"] = {
         Bodygroups = {
             {4, 2},
         },
         AttPosMods = {
             [2] = {
-                Pos = Vector(-4.075, 0, 0),
+                Pos = Vector(1.51, 0, 0),
             },
         },
     },
@@ -550,7 +555,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.509, 0, 0),
+                Pos = Vector(1.889, 0, 0),
             }
         },
     },

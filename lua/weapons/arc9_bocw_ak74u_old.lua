@@ -27,7 +27,7 @@ AddCSLuaFile()
 
 SWEP.Base = "arc9_base"
 
-SWEP.Spawnable = true
+SWEP.Spawnable = false
 SWEP.Category = "ARC9 - Black Ops Cold War"
 SWEP.SubCategory = "WIP"
 SWEP.AdminOnly = false

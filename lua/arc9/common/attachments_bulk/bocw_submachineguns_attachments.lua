@@ -909,7 +909,7 @@ The Fast Mag is a Magazine attachment available for all Light Machine Guns and P
 
 ATT.SortOrder = 2
 
-ATT.Category = "bocw_ksp45_mag"
+ATT.Category = "bocw_milano821_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_milano821_magazine_fast1.mdl"
 
@@ -990,7 +990,7 @@ The Vandal Speed Loader is a type of Magazine attachment available for all Light
 
 ATT.SortOrder = 5
 
-ATT.Category = "bocw_ksp45_mag"
+ATT.Category = "bocw_milano821_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_milano821_magazine_fastpro.mdl"
 
@@ -1251,7 +1251,7 @@ ATT = {}
 
 ATT.PrintName = "Marathon Stock" --// 4
 ATT.CompactName = "MARATHON"
-ATT.Icon = Material("entities/bocw_atts/stocks/milano821_nostock.png", "mips smooth")
+ATT.Icon = Material("entities/bocw_atts/stocks/milano821_marathon.png", "mips smooth")
 ATT.Description = [[Extended stock perfectly balanced for improved sprint recovery time.
 
 The Marathon Stock is set of Stock attachments available in Call of Duty: Black Ops Cold War. It has three distinct variants that improve the delay between sprinting and firing. The first version of the attachment has alternates in the forms of the Wire Stock, Collapsed Stock, CQB Stock, and Shotgun Stock. The second has alternates in the form of the Buffer Tube, No Stock, and CQB Pad. The third version is exclusively for Shotguns.]]

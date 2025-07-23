@@ -78,13 +78,13 @@ SWEP.ViewModelFOVBase = 70
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 39 -- Damage done at point blank range
-SWEP.DamageMin = 35 -- Damage done at maximum range
+SWEP.DamageMax = 32 -- Damage done at point blank range
+SWEP.DamageMin = 23 -- Damage done at maximum range
 
 SWEP.DamageRand = 1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 45 * 39.37 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 400 * 39.37 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 10.6 * 39.37 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 24 * 39.37 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 SWEP.Distance = 1200 * 39.37 -- In Hammer units, how far bullets can travel, period.
 
 SWEP.Num = 1 -- Number of bullets to shoot
@@ -117,7 +117,7 @@ SWEP.BodyDamageMults = {
 
 SWEP.AlwaysPhysBullet = true
 
-SWEP.PhysBulletMuzzleVelocity = 605 * 39.37
+SWEP.PhysBulletMuzzleVelocity = 250 * 39.37
 SWEP.PhysBulletDrag = 1
 SWEP.PhysBulletMP5ity = 1
 SWEP.PhysBulletDontInheritPlayerVelocity = false -- Set to true to disable "Browning Effect"
@@ -165,7 +165,7 @@ SWEP.DropMagazineVelocity = Vector(-200, -200, 0) -- Put something here if your 
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 909
+SWEP.RPM = 857
 
 -- Works different to ArcCW
 
@@ -241,8 +241,8 @@ SWEP.FreeAimRadiusSights = 0
 
 SWEP.SwayMultSights = 0.5
 
-SWEP.AimDownSightsTime = 0.350 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.300 -- How long it takes to go from sprinting to being able to fire.
+SWEP.AimDownSightsTime = 0.275 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.SprintToFireTime = 0.350 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.ShootWhileSprint = false
 

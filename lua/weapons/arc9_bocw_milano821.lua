@@ -420,8 +420,8 @@ SWEP.SightMidPoint = {
 
 -- Position for customizing
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(13, 32, 3)
-SWEP.CustomizeRotateAnchor = Vector(13, 0, -5)
+SWEP.CustomizePos = Vector(13, 35, 3)
+SWEP.CustomizeRotateAnchor = Vector(13, 0, -3)
 
 SWEP.CustomizeSnapshotFOV = 70
 SWEP.CustomizeSnapshotPos = Vector(0, 20, 0)
@@ -468,22 +468,12 @@ SWEP.AttachmentElements = {
     },
     ["barrelgone"] = {
         Bodygroups = {
-            {4, 1},
+            {3, 1},
         }
     },
     ["stockgone"] = {
         Bodygroups = {
-            {5, 1},
-        }
-    },
-    ["stockmountgone"] = {
-        Bodygroups = {
-            {6, 1},
-        }
-    },
-    ["bayonetgone"] = {
-        Bodygroups = {
-            {9, 1},
+            {4, 1},
         }
     },
     ["bodymount_lasermixbody"] = {
@@ -497,9 +487,6 @@ SWEP.AttachmentElements = {
         }
     },
     ["barrel_extended"] = {
-        Bodygroups = {
-            {4, 2},
-        },
         AttPosMods = {
             [2] = {
                 Pos = Vector(1.889, 0, 0),
@@ -507,9 +494,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["barrel_cavalry"] = {
-        Bodygroups = {
-            {4, 2},
-        },
         AttPosMods = {
             [2] = {
                 Pos = Vector(3, 0, 0),
@@ -517,9 +501,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["barrel_reinforced"] = {
-        Bodygroups = {
-            {4, 2},
-        },
         AttPosMods = {
             [2] = {
                 Pos = Vector(1.889, 0, 0),
@@ -527,9 +508,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["barrel_ranger"] = {
-        Bodygroups = {
-            {4, 2},
-        },
         AttPosMods = {
             [2] = {
                 Pos = Vector(1.889, 0, 0),
@@ -537,9 +515,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["barrel_rifled"] = {
-        Bodygroups = {
-            {4, 2},
-        },
         AttPosMods = {
             [2] = {
                 Pos = Vector(1.51, 0, 0),
@@ -547,9 +522,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["barrel_taskforce"] = {
-        Bodygroups = {
-            {4, 2},
-        },
         AttPosMods = {
             [2] = {
                 Pos = Vector(1.889, 0, 0),
@@ -628,9 +600,9 @@ SWEP.Attachments = {
     {
         PrintName = "BARREL",
         Bone = "tag_barrel",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(5.475, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(6.2, 0, 0),
+        Icon_Offset = Vector(0.75, 0, 0),
         Category = {"bocw_milano821_barrel"},
         InstalledElements = {"barrelgone"},
     },
@@ -674,6 +646,13 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
         Category = {"bocw_milano821_stock"},
+        InstalledElements = {"stockgone"},
+    },
+    {
+        Hidden = true,
+        MergeSlots = {8,9},
+        Bone = "tag_weapon",
+        Category = {"bocw_milano821_stock_tac"},
         InstalledElements = {"stockgone"},
     },
     {
@@ -907,9 +886,9 @@ SWEP.Animations = {
         MinProgress = 0.7,
         EventTable = {
             { s = "ARC9_BOCW.Milano821_reload_start", t = 0 },
-            { s = "ARC9_BOCW.Milano821_reload_ext_magout", t = 0.3 },
-            { s = "ARC9_BOCW.Milano821_reload_ext_magin", t = 1.2 },
-            { s = "ARC9_BOCW.Milano821_reload_end", t = 2 },
+            { s = "ARC9_BOCW.Milano821_reload_ext_magout", t = 0.2 },
+            { s = "ARC9_BOCW.Milano821_reload_ext_magin", t = 1.3 },
+            { s = "ARC9_BOCW.Milano821_reload_end", t = 1.9 },
         },
         IKTimeLine = {
             {
@@ -941,12 +920,12 @@ SWEP.Animations = {
         MagSwapTime = 1,
         DropMagAt = 0.6,
         EventTable = {
-            { s = "ARC9_BOCW.Milano821_reload_empty_start", t = 0 },
-            { s = "ARC9_BOCW.Milano821_reload_ext_empty_magout", t = 0.3 },
-            { s = "ARC9_BOCW.Milano821_reload_ext_magin", t = 1.2 },
-            { s = "ARC9_BOCW.Milano821_charginghandle_start", t = 2.2 },
-            { s = "ARC9_BOCW.Milano821_charginghandle", t = 2.2 },
-            { s = "ARC9_BOCW.Milano821_reload_empty_end", t = 2.8 },
+            { s = "ARC9_BOCW.Milano821_reload_start", t = 0 },
+            { s = "ARC9_BOCW.Milano821_reload_ext_magout", t = 0.2 },
+            { s = "ARC9_BOCW.Milano821_reload_ext_magin", t = 1.3 },
+            { s = "ARC9_BOCW.Milano821_boltback", t = 2.1 },
+            { s = "ARC9_BOCW.Milano821_boltrelease", t = 2.25 },
+            { s = "ARC9_BOCW.Milano821_reload_end", t = 2.6 },
         },
         IKTimeLine = {
             {
@@ -978,8 +957,8 @@ SWEP.Animations = {
         EventTable = {
             { s = "ARC9_BOCW.Milano821_reload_start", t = 0 },
             { s = "ARC9_BOCW.Milano821_reload_magout", t = 0.2 },
-            { s = "ARC9_BOCW.Milano821_reload_magin", t = 0.9 },
-            { s = "ARC9_BOCW.Milano821_reload_end", t = 2 },
+            { s = "ARC9_BOCW.Milano821_reload_magin", t = 1.6 },
+            { s = "ARC9_BOCW.Milano821_reload_end", t = 1.9 },
         },
         IKTimeLine = {
             {
@@ -1009,13 +988,12 @@ SWEP.Animations = {
         Time = 3.17,
         MinProgress = 0.5,
         EventTable = {
-            { s = "ARC9_BOCW.Milano821_reload_empty_start", t = 0 },
-            { s = "ARC9_BOCW.Milano821_reload_empty_magout", t = 0.2 },
-            { s = "ARC9_BOCW.Milano821_reload_empty_maginstart", t = 0.7 },
-            { s = "ARC9_BOCW.Milano821_reload_magin", t = 0.9 },
-            { s = "ARC9_BOCW.Milano821_charginghandle_start", t = 2.1 },
-            { s = "ARC9_BOCW.Milano821_charginghandle", t = 2.1 },
-            { s = "ARC9_BOCW.Milano821_reload_empty_end", t = 2.7 },
+            { s = "ARC9_BOCW.Milano821_reload_start", t = 0 },
+            { s = "ARC9_BOCW.Milano821_reload_magout", t = 0.2 },
+            { s = "ARC9_BOCW.Milano821_reload_magin", t = 1.5 },
+            { s = "ARC9_BOCW.Milano821_boltback", t = 2.1 },
+            { s = "ARC9_BOCW.Milano821_boltrelease", t = 2.25 },
+            { s = "ARC9_BOCW.Milano821_reload_end", t = 2.4 },
         },
         IKTimeLine = {
             {
@@ -1045,10 +1023,10 @@ SWEP.Animations = {
         Time = 2.53,
         MinProgress = 0.7,
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_reload_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_magout", t = 0.2 },
-            { s = "ARC9_BOCW.CARV2_reload_magin", t = 1 },
-            { s = "ARC9_BOCW.CARV2_reload_end", t = 2 },
+            { s = "ARC9_BOCW.Milano821_reload_start", t = 0 },
+            { s = "ARC9_BOCW.Milano821_reload_magout", t = 0.2 },
+            { s = "ARC9_BOCW.Milano821_reload_magin", t = 1.3 },
+            { s = "ARC9_BOCW.Milano821_reload_end", t = 1.8 },
         },
         IKTimeLine = {
             {
@@ -1079,13 +1057,12 @@ SWEP.Animations = {
         MinProgress = 0.55,
         MagSwapTime = 1,
         EventTable = {
-            { s = "ARC9_BOCW.CARV2_reload_empty_start", t = 0 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_magout", t = 0.3 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_maginstart", t = 0.8 },
-            { s = "ARC9_BOCW.CARV2_reload_magin", t = 1 },
-            { s = "ARC9_BOCW.CARV2_charginghandle_start", t = 2.1 },
-            { s = "ARC9_BOCW.CARV2_charginghandle", t = 2.1 },
-            { s = "ARC9_BOCW.CARV2_reload_empty_end", t = 2.8 },
+            { s = "ARC9_BOCW.Milano821_reload_start", t = 0 },
+            { s = "ARC9_BOCW.Milano821_reload_magout", t = 0.2 },
+            { s = "ARC9_BOCW.Milano821_reload_magin", t = 1.3 },
+            { s = "ARC9_BOCW.Milano821_boltback", t = 2 },
+            { s = "ARC9_BOCW.Milano821_boltrelease", t = 2.15 },
+            { s = "ARC9_BOCW.Milano821_reload_end", t = 2.4 },
         },
         IKTimeLine = {
             {

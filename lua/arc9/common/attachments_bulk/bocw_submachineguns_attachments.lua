@@ -774,7 +774,7 @@ ARC9.LoadAttachment(ATT, "bocw_milano821_barrel_reinforced")
 ATT = {}
 
 ATT.PrintName = [[10.5" Ranger]] --// 4
-ATT.CompactName = [[10.5" RANGER]]
+ATT.CompactName = [[10.5" RANGR]]
 ATT.Icon = Material("entities/bocw_atts/barrels/milano821_ranger.png", "mips smooth")
 ATT.Description = [[Durable steel barrel with phosphate coating. Button rifled to improve bullet velocity.
 
@@ -1187,7 +1187,7 @@ The Tactical Stock is a Stock attachment available for all Primary Weapons and S
 
 ATT.SortOrder = 0
 
-ATT.Category = "bocw_milano821_stock"
+ATT.Category = "bocw_milano821_stock_tac"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_milano821_stock_tactical.mdl"
 
@@ -1283,7 +1283,7 @@ The SAS Combat Stock is a Stock attachment available for all NATO related primar
 
 ATT.SortOrder = 5
 
-ATT.Category = "bocw_milano821_stock"
+ATT.Category = "bocw_milano821_stock_tac"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_milano821_stock_sascombat.mdl"
 

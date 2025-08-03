@@ -1547,7 +1547,7 @@ ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
-ATT.ClipSizeOverride = 30
+ATT.ClipSizeOverride = 40
 
 ATT.ReloadTimeMult = 1.1
 
@@ -1768,7 +1768,7 @@ ATT.SortOrder = 4
 
 ATT.Category = "bocw_ak74u_wrap"
 
-ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_handle_spetsnazfield.mdl"
+ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_handle_spetsnaz.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -1847,10 +1847,12 @@ ATT.Category = "bocw_ak74u_stock"
 ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_stock_tactical.mdl"
 
 ATT.Scale = 1
-ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(0, 0, 0.012)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.SpeedMultSights = 1.1
+
+ATT.ActivateElements = {"gripgone"}
 
 ARC9.LoadAttachment(ATT, "bocw_ak74u_stock_tactical")
 
@@ -1898,6 +1900,8 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.SpeedMult = 1.05
 
+ATT.ActivateElements = {"gripgone"}
+
 ARC9.LoadAttachment(ATT, "bocw_ak74u_stock_duster")
 
 ATT = {}
@@ -1931,7 +1935,7 @@ ATT = {}
 
 ATT.PrintName = "Spetsnaz PKM Stock" --// 5
 ATT.CompactName = "PKM STOCK"
-ATT.Icon = Material("entities/bocw_atts/stocks/ak74u_raider.png", "mips smooth")
+ATT.Icon = Material("entities/bocw_atts/stocks/ak74u_spetsnazpkm.png", "mips smooth")
 ATT.Description = [[Lightweight stock provides stability to improve movement speeds when aiming and firing.
 
 The Spetsnaz PKM Stock is one of the Stock attachments for Warsaw Pact related primary weapons alongside the Spetsnaz Stock. It gives greatly improved movement speed while aiming with a bit of movement speed while shooting but at the cost of hip fire accuracy. The NATO equivalent is the SAS Combat Stock.]]
@@ -1940,7 +1944,7 @@ ATT.SortOrder = 5
 
 ATT.Category = "bocw_ak74u_stock"
 
-ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_stock_raider.mdl"
+ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_stock_spetsnazpkm.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -1950,6 +1954,8 @@ ATT.SpeedMultShooting = 1.05
 ATT.SpeedMultSighted = 1.15
 
 ATT.SpreadMultHipFire = 1.15
+
+ATT.ActivateElements = {"gripgone"}
 
 ARC9.LoadAttachment(ATT, "bocw_ak74u_stock_spetsnazpkm")
 
@@ -1976,6 +1982,8 @@ ATT.SprintToFireTimeMult = 0.7
 ATT.SpeedMultSighted = 1.1
 
 ATT.SpreadMultHipFire = 1.3
+
+ATT.ActivateElements = {"gripgone"}
 
 ARC9.LoadAttachment(ATT, "bocw_ak74u_stock_kgbskeletal")
 --[[
@@ -3320,3 +3328,26 @@ ATT.MuzzleDevice = true
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
 ARC9.LoadAttachment(ATT, "bocw_mp5_muzzle_base")
+
+ATT = {}
+
+ATT.PrintName = "AK-74U Muzzle Device"
+ATT.CompactName = "74U MUZZLE"
+ATT.Icon = Material("entities/bocw_atts/muzzles/ak74u_base.png", "mips smooth")
+ATT.Description = [[Default AK-74u muzzle device.]]
+
+ATT.SortOrder = -10
+
+ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_muzzle.mdl"
+
+ATT.Category = {"bocw_ak74u_muzzle"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride_Priority = 100
+ATT.MuzzleDevice = true
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_ak74u_muzzle_base")

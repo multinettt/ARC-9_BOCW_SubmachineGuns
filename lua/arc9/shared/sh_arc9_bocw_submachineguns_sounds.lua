@@ -307,7 +307,7 @@ sound.Add({
 -- RELOAD FOLEY
 
 sound.Add({
-    name = "ARC9_BOCW.AK74u_readycloth",
+    name = "ARC9_BOCW.AK74u_ready_cloth",
     channel = CHAN_AUTO,
     volume = 1.0,
     sound = "weapons/arc9/bocw_ak74u/ak74u_ready_cloth.wav"

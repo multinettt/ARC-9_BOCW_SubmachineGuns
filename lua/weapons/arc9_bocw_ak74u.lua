@@ -38,7 +38,7 @@ SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
     Manufacturer = "Tula Arms Plant",
     Calibre = "5.45x39mm",
-    Mechanism = "Gas-operated long-stroke piston, closed rotating bolt",
+    Mechanism = "Gas-operated, long-stroke piston, closed rotating bolt",
     Country = "Soviet Union",
     Year = 1974
 }
@@ -423,8 +423,8 @@ SWEP.SightMidPoint = {
 
 -- Position for customizing
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(9, 35, 4)
-SWEP.CustomizeRotateAnchor = Vector(9, 0, -5)
+SWEP.CustomizePos = Vector(9, 35, 3)
+SWEP.CustomizeRotateAnchor = Vector(9, 0, -4)
 
 SWEP.CustomizeSnapshotFOV = 70
 SWEP.CustomizeSnapshotPos = Vector(0, 20, 0)
@@ -469,9 +469,9 @@ SWEP.AttachmentElements = {
             {3, 1},
         }
     },
-    ["barrelgone"] = {
+    ["handguardgone"] = {
         Bodygroups = {
-            {4, 1},
+            {6, 1},
         }
     },
     ["stockgone"] = {
@@ -495,62 +495,30 @@ SWEP.AttachmentElements = {
         }
     },
     ["barrel_extended"] = {
-        Bodygroups = {
-            {4, 2},
-        },
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.889, 0, 0),
-            },
-        },
-    },
-    ["barrel_cavalry"] = {
-        Bodygroups = {
-            {4, 2},
-        },
-        AttPosMods = {
-            [2] = {
-                Pos = Vector(3, 0, 0),
+                Pos = Vector(1.25, 0, 0),
             },
         },
     },
     ["barrel_reinforced"] = {
-        Bodygroups = {
-            {4, 2},
-        },
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.889, 0, 0),
+                Pos = Vector(1.25, 0, 0),
             },
         },
     },
-    ["barrel_ranger"] = {
-        Bodygroups = {
-            {4, 2},
-        },
+    ["barrel_liberator"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.889, 0, 0),
+                Pos = Vector(2.75, 0, 0),
             }
         },
     },
-    ["barrel_rifled"] = {
-        Bodygroups = {
-            {4, 2},
-        },
-        AttPosMods = {
-            [2] = {
-                Pos = Vector(1.51, 0, 0),
-            },
-        },
-    },
     ["barrel_taskforce"] = {
-        Bodygroups = {
-            {4, 2},
-        },
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.889, 0, 0),
+                Pos = Vector(2.75, 0, 0),
             }
         },
     },
@@ -629,12 +597,19 @@ SWEP.Attachments = {
     },
     {
         PrintName = "BARREL",
-        Bone = "tag_barrel",
+        Bone = "tag_muzzle",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(-2, 0, 0),
         Category = {"bocw_ak74u_barrel"},
-        InstalledElements = {"barrelgone"},
+        InstalledElements = {"handguardgone"},
+    },
+    {
+        Hidden = true,
+        MergeSlots = {3,4},
+        Bone = "tag_weapon",
+        Category = {"bocw_ak74u_barrel_heavy"},
+        InstalledElements = {"handguardgone"},
     },
     {
         PrintName = "BODY",
@@ -697,10 +672,36 @@ SWEP.Attachments = {
         CosmeticOnly = true,
     },
     {
-        PrintName = "STICKER 3",
+        PrintName = "STICKER 3", 
+        Bone = "tag_clip",
         Category = "stickers",
         StickerModel = "models/weapons/arc9/stickers/bocw_ak74u_sticker3.mdl",
         CosmeticOnly = true,
+        ExcludeElements = {"ak74u_mag_ext", "ak74u_mag_dual", "ak74u_mag_mix"}
+    },
+    {
+        PrintName = "STICKER 3", 
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_ak74u_sticker3_ext.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"ak74u_mag_ext"}
+    },
+    {
+        PrintName = "STICKER 3", 
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_ak74u_sticker3_dual.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"ak74u_mag_dual"}
+    },
+    {
+        PrintName = "STICKER 3", 
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_ak74u_sticker3_mix.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"ak74u_mag_mix"}
     },
 }
 

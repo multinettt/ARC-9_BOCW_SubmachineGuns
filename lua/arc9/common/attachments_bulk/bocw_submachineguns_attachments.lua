@@ -1374,7 +1374,7 @@ The Cavalry Lancer barrel is an attachment type new to Call of Duty: Black Ops C
 
 ATT.SortOrder = 8.4
 
-ATT.Category = "bocw_ak74u_barrel"
+ATT.Category = "bocw_ak74u_barrel_heavy"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_barrel_cavalry.mdl"
 
@@ -1407,7 +1407,7 @@ ATT.SortOrder = 9.5
 
 ATT.Category = "bocw_ak74u_barrel"
 
-ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_barrel_reinforced.mdl"
+ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_barrel_vdvreinforced.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -1471,7 +1471,7 @@ The Rifled barrel is an attachment type available for Submachine Guns in Call of
 
 ATT.SortOrder = 8.4
 
-ATT.Category = "bocw_ak74u_barrel"
+ATT.Category = "bocw_ak74u_barrel_heavy"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_barrel_rifled.mdl"
 

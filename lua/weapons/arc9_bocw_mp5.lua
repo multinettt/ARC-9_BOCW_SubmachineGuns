@@ -423,7 +423,7 @@ SWEP.SightMidPoint = {
 
 -- Position for customizing
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(11, 35, 5)
+SWEP.CustomizePos = Vector(11, 35, 4)
 SWEP.CustomizeRotateAnchor = Vector(11, 0, -5)
 
 SWEP.CustomizeSnapshotFOV = 70
@@ -579,9 +579,6 @@ SWEP.AttachmentTableOverrides = {
         ModelOffset = Vector(0,0.02,-0.98),
         Scale = 1,
     },
-    ["bocw_ak47_body_mixbody1"] = {
-        ModelOffset = Vector(0.8,-0.18,0),
-    },
     ["bocw_optic_visiontech2x"] = {
         VisualRecoil = 0.1
     },
@@ -652,10 +649,10 @@ SWEP.Attachments = {
     {
         PrintName = "UNDRBARREL",
         Bone = "tag_weapon",
-        Pos = Vector(-10.3, -4.42, 6.3),
+        Pos = Vector(-11, -4.42, 6.75),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(20.25, 4.5, -5),
-        Category = {"bocw_mp5_underbarrel"},
+        Category = {"bocw_mp5_underbarrel", "bocw_smg_underbarrel_west"},
     },
     {
         PrintName = "MAGAZINE",

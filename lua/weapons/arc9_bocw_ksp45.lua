@@ -470,12 +470,12 @@ SWEP.AttachmentElements = {
     },
     ["barrelgone"] = {
         Bodygroups = {
-            {3, 1},
+            {4, 1},
         }
     },
     ["stockgone"] = {
         Bodygroups = {
-            {4, 1},
+            {5, 1},
         }
     },
     ["bodymount_lasermixbody"] = {
@@ -491,42 +491,42 @@ SWEP.AttachmentElements = {
     ["barrel_extended"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.889, 0, 0),
+                Pos = Vector(1, 0, 0),
             },
         },
     },
     ["barrel_cavalry"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(3, 0, 0),
+                Pos = Vector(2.21, 0, 0),
             },
         },
     },
     ["barrel_reinforced"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.889, 0, 0),
+                Pos = Vector(3.23, 0, 0),
             },
         },
     },
     ["barrel_ranger"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.889, 0, 0),
+                Pos = Vector(2, 0, 0),
             }
         },
     },
     ["barrel_rifled"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.51, 0, 0),
+                Pos = Vector(2.79, 0, 0),
             },
         },
     },
     ["barrel_taskforce"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.889, 0, 0),
+                Pos = Vector(3.23, 0, 0),
             }
         },
     },
@@ -606,7 +606,7 @@ SWEP.Attachments = {
         Bone = "tag_barrel",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0.75, 0, 0),
+        Icon_Offset = Vector(3, 0, 0),
         Category = {"bocw_ksp45_barrel"},
         InstalledElements = {"barrelgone"},
     },
@@ -640,15 +640,15 @@ SWEP.Attachments = {
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(-0.5, 0, -0.5),
+        Icon_Offset = Vector(-0.75, 0, -0.5),
         Category = {"bocw_ksp45_wrap"},
     },
     {
         PrintName = "STOCK",
-        Bone = "tag_stock",
+        Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, 0),
+        Icon_Offset = Vector(-3, 0, 3.8),
         Category = {"bocw_ksp45_stock"},
         InstalledElements = {"stockgone"},
     },
@@ -884,12 +884,12 @@ SWEP.Animations = {
     ["reload_ext"] = {
         Source = "reload_ext",
         Time = 2.67,
-        MinProgress = 0.7,
+        MinProgress = 0.65,
         EventTable = {
             { s = "ARC9_BOCW.KSP45_reload_start", t = 0 },
-            { s = "ARC9_BOCW.KSP45_reload_ext_magout", t = 0.2 },
-            { s = "ARC9_BOCW.KSP45_reload_ext_magin", t = 1.3 },
-            { s = "ARC9_BOCW.KSP45_reload_end", t = 1.9 },
+            { s = "ARC9_BOCW.KSP45_reload_magout", t = 0.3 },
+            { s = "ARC9_BOCW.KSP45_reload_magin", t = 1.3 },
+            { s = "ARC9_BOCW.KSP45_reload_end", t = 2 },
         },
         IKTimeLine = {
             {
@@ -922,11 +922,11 @@ SWEP.Animations = {
         DropMagAt = 0.6,
         EventTable = {
             { s = "ARC9_BOCW.KSP45_reload_start", t = 0 },
-            { s = "ARC9_BOCW.KSP45_reload_ext_magout", t = 0.2 },
-            { s = "ARC9_BOCW.KSP45_reload_ext_magin", t = 1.3 },
-            { s = "ARC9_BOCW.KSP45_boltback", t = 2.1 },
-            { s = "ARC9_BOCW.KSP45_boltrelease", t = 2.25 },
-            { s = "ARC9_BOCW.KSP45_reload_end", t = 2.6 },
+            { s = "ARC9_BOCW.KSP45_reload_magout", t = 0.3 },
+            { s = "ARC9_BOCW.KSP45_reload_magin", t = 1 },
+            { s = "ARC9_BOCW.KSP45_reload_ext_magintap", t = 1.6 },
+            { s = "ARC9_BOCW.KSP45_boltrelease", t = 2.1 },
+            { s = "ARC9_BOCW.KSP45_reload_end", t = 2.4 },
         },
         IKTimeLine = {
             {
@@ -954,12 +954,12 @@ SWEP.Animations = {
     ["reload_fast"] = {
         Source = "reload_fast",
         Time = 2.67,
-        MinProgress = 0.6,
+        MinProgress = 0.55,
         EventTable = {
             { s = "ARC9_BOCW.KSP45_reload_start", t = 0 },
-            { s = "ARC9_BOCW.KSP45_reload_magout", t = 0.2 },
-            { s = "ARC9_BOCW.KSP45_reload_magin", t = 1.6 },
-            { s = "ARC9_BOCW.KSP45_reload_end", t = 1.9 },
+            { s = "ARC9_BOCW.KSP45_reload_magout", t = 0.3 },
+            { s = "ARC9_BOCW.KSP45_reload_magin", t = 1 },
+            { s = "ARC9_BOCW.KSP45_reload_end", t = 1.8 },
         },
         IKTimeLine = {
             {
@@ -987,14 +987,13 @@ SWEP.Animations = {
     ["reload_empty_fast"] = {
         Source = "reload_fast_empty",
         Time = 3.1,
-        MinProgress = 0.5,
+        MinProgress = 0.45,
         EventTable = {
             { s = "ARC9_BOCW.KSP45_reload_start", t = 0 },
-            { s = "ARC9_BOCW.KSP45_reload_magout", t = 0.2 },
-            { s = "ARC9_BOCW.KSP45_reload_magin", t = 1.5 },
-            { s = "ARC9_BOCW.KSP45_boltback", t = 2.1 },
-            { s = "ARC9_BOCW.KSP45_boltrelease", t = 2.25 },
-            { s = "ARC9_BOCW.KSP45_reload_end", t = 2.4 },
+            { s = "ARC9_BOCW.KSP45_reload_magout", t = 0.3 },
+            { s = "ARC9_BOCW.KSP45_reload_magin", t = 1 },
+            { s = "ARC9_BOCW.KSP45_boltrelease", t = 1.8 },
+            { s = "ARC9_BOCW.KSP45_reload_end", t = 2.3 },
         },
         IKTimeLine = {
             {
@@ -1022,11 +1021,11 @@ SWEP.Animations = {
     ["reload_mix"] = {
         Source = "reload_mix",
         Time = 2.67,
-        MinProgress = 0.7,
+        MinProgress = 0.65,
         EventTable = {
             { s = "ARC9_BOCW.KSP45_reload_start", t = 0 },
-            { s = "ARC9_BOCW.KSP45_reload_magout", t = 0.2 },
-            { s = "ARC9_BOCW.KSP45_reload_magin", t = 1.3 },
+            { s = "ARC9_BOCW.KSP45_reload_magout", t = 0.3 },
+            { s = "ARC9_BOCW.KSP45_reload_magin", t = 1.1 },
             { s = "ARC9_BOCW.KSP45_reload_end", t = 1.8 },
         },
         IKTimeLine = {
@@ -1059,11 +1058,10 @@ SWEP.Animations = {
         MagSwapTime = 1,
         EventTable = {
             { s = "ARC9_BOCW.KSP45_reload_start", t = 0 },
-            { s = "ARC9_BOCW.KSP45_reload_magout", t = 0.2 },
-            { s = "ARC9_BOCW.KSP45_reload_magin", t = 1.3 },
-            { s = "ARC9_BOCW.KSP45_boltback", t = 2 },
-            { s = "ARC9_BOCW.KSP45_boltrelease", t = 2.15 },
-            { s = "ARC9_BOCW.KSP45_reload_end", t = 2.4 },
+            { s = "ARC9_BOCW.KSP45_reload_magout", t = 0.3 },
+            { s = "ARC9_BOCW.KSP45_reload_magin", t = 1.1 },
+            { s = "ARC9_BOCW.KSP45_boltrelease", t = 1.9 },
+            { s = "ARC9_BOCW.KSP45_reload_end", t = 2.3 },
         },
         IKTimeLine = {
             {

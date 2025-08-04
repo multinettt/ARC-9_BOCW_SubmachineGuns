@@ -2196,7 +2196,7 @@ ATT = {}
 ATT.PrintName = "42 Rnd" --// 1
 ATT.CompactName = "42 RND"
 ATT.Icon = Material("entities/bocw_atts/magazines/ksp45_ext1.png", "mips smooth")
-ATT.Description = [[Extended drum magazine. Contains 40 rounds.
+ATT.Description = [[Extended drum magazine. Contains 42 rounds.
 
 Extended Mags are a type of Magazine attachment available for Primaries, Pistols and Shotguns in Call of Duty: Black Ops Cold War. Like Modern Warfare, magazine extensions are named for their capacity. Speed Mags act as extended mags with faster reloading. Further extensions are provided by STANAG Mags, Bakelite Mags, Spetsnaz Mags, Salvo Fast Mags & VDV Fast Mags.]]
 
@@ -2248,7 +2248,7 @@ ATT = {}
 ATT.PrintName = "42 Rnd Speed Mag" --// 3
 ATT.CompactName = "42 RND SPD"
 ATT.Icon = Material("entities/bocw_atts/magazines/ksp45_mix1.png", "mips smooth")
-ATT.Description = [[High-capacity magazine with increased gripping surface for faster reloads. Holds 40 rounds.
+ATT.Description = [[High-capacity magazine with increased gripping surface for faster reloads. Holds 42 rounds.
 
 The Speed Mag is a type of Magazine attachment available for all Assault Rifles. Submachine Guns, Tactical Rifles, Light Machine Guns, Sniper Rifles and Pistols in Call of Duty: Black Ops Cold War. It increases magazine size alongside decreasing reload speeds but at the cost of increasing aiming time, however, for the XM4 and Grav, it does not affect the aiming time.]]
 
@@ -2312,7 +2312,7 @@ ATT.SortOrder = 5
 
 ATT.Category = "bocw_ksp45_mag"
 
-ATT.Model = "models/weapons/arc9/atts/bocw_ksp45_magazine_dualpro.mdl"
+ATT.Model = "models/weapons/arc9/atts/bocw_ksp45_magazine_fastpro.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -2889,9 +2889,9 @@ The Fast Mag is a Magazine attachment available for all Light Machine Guns and P
 
 ATT.SortOrder = 2
 
-ATT.Category = "bocw_ksp45_mag"
+ATT.Category = "bocw_bullfrog_mag"
 
-ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog5_magazine_fast1.mdl"
+ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_magazine_fast1.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -2970,7 +2970,7 @@ The Vandal Speed Loader is a type of Magazine attachment available for all Light
 
 ATT.SortOrder = 5
 
-ATT.Category = "bocw_ksp45_mag"
+ATT.Category = "bocw_bullfrog_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_magazine_dualpro.mdl"
 

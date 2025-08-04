@@ -485,6 +485,7 @@ sound.Add({
     sound = "weapons/arc9/bocw_ksp45/ksp45_reload_empty_cloth.wav"
 })
 
+
 sound.Add({
     name = "ARC9_BOCW.KSP45_reload_start",
     channel = CHAN_AUTO,

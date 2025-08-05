@@ -3209,7 +3209,7 @@ ATT.CompactName = "DUSTER STK"
 ATT.Icon = Material("entities/bocw_atts/stocks/bullfrog_duster.png", "mips smooth")
 ATT.Description = [[Lightweight stock durably constructed to increase sliding speed.
 
-TThe Duster Stock is available as a stock attachment in Call of Duty: Black Ops Cold War. It gives increases speed while sliding, giving more distance per slide. It has an alternate in the form of the Duster Pad.]]
+The Duster Stock is available as a stock attachment in Call of Duty: Black Ops Cold War. It gives increases speed while sliding, giving more distance per slide. It has an alternate in the form of the Duster Pad.]]
 
 ATT.SortOrder = 2
 
@@ -3282,7 +3282,7 @@ ATT = {}
 
 ATT.PrintName = "KGB Skeletal Stock" --// 6
 ATT.CompactName = "KGB STOCK"
-ATT.Icon = Material("entities/bocw_atts/stocks/bullfrog_kgb.png", "mips smooth")
+ATT.Icon = Material("entities/bocw_atts/stocks/bullfrog_kgbskeletal.png", "mips smooth")
 ATT.Description = [[Lightweight stock provides added stability for improved sprint recovery and walking speed when aiming.
 
 The KGB Skeletal Stock is a Stock attachment available for some Warsaw Pact related primary weapons. It gives greatly improved sprint to fire timing with improved movement speeds while aiming at the cost of a heavily reduced hip fire accuracy. It has an alternate Warsaw Pact equivalent with the KGB Pad. The NATO equivalents are the Raider Pad and Raider Stock, while Shotguns get the Marathon Stock.]]
@@ -3375,3 +3375,26 @@ ATT.MuzzleDevice = true
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
 ARC9.LoadAttachment(ATT, "bocw_ksp45_muzzle_base")
+
+ATT = {}
+
+ATT.PrintName = "Bullfrog Muzzle Device"
+ATT.CompactName = "MUZZLE"
+ATT.Icon = Material("entities/acwatt_bocw.png", "mips smooth")
+ATT.Description = [[Default Bullfrog muzzle device.]]
+
+ATT.SortOrder = -10
+
+ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_muzzle.mdl"
+
+ATT.Category = {"bocw_bullfrog_muzzle"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride_Priority = 100
+ATT.MuzzleDevice = true
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_bullfrog_muzzle_base")

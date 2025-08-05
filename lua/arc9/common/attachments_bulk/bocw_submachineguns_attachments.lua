@@ -2659,7 +2659,7 @@ o888bood8P'   `V88V"V8P' o888o o888o o888o   d888b    `Y8bod8P' `8oooooo.
 ATT = {}
 
 ATT.PrintName = [[7.1" Extended]] --// 1
-ATT.CompactName = [[7.1" EXTND]]
+ATT.CompactName = [[7.1" EXTEND]]
 ATT.Icon = Material("entities/bocw_atts/barrels/bullfrog_extended.png", "mips smooth")
 ATT.Description = [[Thin profile barrel forged from chromoly steel. Improves bullet velocity.
 
@@ -2689,7 +2689,7 @@ ARC9.LoadAttachment(ATT, "bocw_bullfrog_barrel_extended")
 ATT = {}
 
 ATT.PrintName = [[7" Cavalry Lancer]] --// 2
-ATT.CompactName = [[7" CAVLRY]]
+ATT.CompactName = [[7" CAVALRY]]
 ATT.Icon = Material("entities/bocw_atts/barrels/bullfrog_cavalry.png", "mips smooth")
 ATT.Description = [[Heavy profile barrel broach rifled to improve damage against enemy vehicles.
 
@@ -2754,7 +2754,7 @@ ARC9.LoadAttachment(ATT, "bocw_bullfrog_barrel_reinforced")
 ATT = {}
 
 ATT.PrintName = [[8.1" Liberator]] --// 4
-ATT.CompactName = [[8.1" LBRTR]]
+ATT.CompactName = [[8.1" LIBERATR]]
 ATT.Icon = Material("entities/bocw_atts/barrels/bullfrog_liberator.png", "mips smooth")
 ATT.Description = [[Durable steel barrel with phosphate coating. Button rifled to improve bullet velocity.
 
@@ -2972,7 +2972,7 @@ ATT.SortOrder = 5
 
 ATT.Category = "bocw_bullfrog_mag"
 
-ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_magazine_dualpro.mdl"
+ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_magazine_fastpro.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -3093,7 +3093,7 @@ ATT.SortOrder = 4
 
 ATT.Category = "bocw_bullfrog_wrap"
 
-ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_handle_spetsnazfield.mdl"
+ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_handle_spetsnaz.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -3221,8 +3221,6 @@ ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
-ATT.SpeedMult = 1.05
-
 ARC9.LoadAttachment(ATT, "bocw_bullfrog_stock_duster")
 
 ATT = {}
@@ -3291,7 +3289,7 @@ ATT.SortOrder = 6
 
 ATT.Category = "bocw_bullfrog_stock"
 
-ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_stock_kgb.mdl"
+ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_stock_kgbskeletal.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)

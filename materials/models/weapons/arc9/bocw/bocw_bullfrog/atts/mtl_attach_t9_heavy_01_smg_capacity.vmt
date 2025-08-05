@@ -1,8 +1,8 @@
 "VertexLitGeneric"
 {
-    "$basetexture" "models\weapons\arc9\bocw\bocw_milano821\atts\mtl_attach_t9_barrel_long_01_smg_rgb"
-    "$bumpmap" "models\weapons\arc9\bocw\bocw_milano821\atts\mtl_attach_t9_barrel_long_01_smg_n"
-    "$phongexponenttexture" "models\weapons\arc9\bocw\bocw_milano821\atts\mtl_attach_t9_barrel_long_01_smg_e"
+    "$basetexture" "models\weapons\arc9\bocw\bocw_bullfrog\atts\mtl_attach_t9_heavy_01_smg_capacity_rgb"
+    "$bumpmap" "models\weapons\arc9\bocw\bocw_bullfrog\atts\mtl_attach_t9_heavy_01_smg_capacity_n"
+    "$phongexponenttexture" "models\weapons\arc9\bocw\bocw_bullfrog\atts\mtl_attach_t9_heavy_01_smg_capacity_e"
 
     /////////////////
     "$color2" "[0 0 0]"                                     //do not touch this
@@ -25,8 +25,8 @@
     "$normalmapalphaenvmapmask" "1"                         //do not touch this
     /////////////////
 
-    "$envmap" "\specularity_25"
-    "$envmaptint" "[0.153 0.149 0.145]"                 
+    "$envmap" "\specularity_00"
+    "$envmaptint" "[0.129 0.129 0.129]"                 
 
     //remove this if not using MWB
     "Proxies"
@@ -35,8 +35,8 @@
         {
             "min" "0"
             "max" "1"
-            "envmap" "\specularity_25"
-            "color" "[0.153 0.149 0.145]"
+            "envmap" "\specularity_00"
+            "color" "[0.129 0.129 0.129]"
         }
     }
 }

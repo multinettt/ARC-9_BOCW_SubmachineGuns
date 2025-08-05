@@ -133,9 +133,9 @@ SWEP.TracerSize = 0.5
 
 SWEP.Ammo = "ar2" -- What ammo type this gun uses.
 
-SWEP.ChamberSize = 0 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 30 -- Self-explanatory.
-SWEP.SupplyLimit = 4 -- Amount of magazines of ammo this gun can take from an ARC-9 supply crate.
+SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
+SWEP.ClipSize = 50 -- Self-explanatory.
+SWEP.SupplyLimit = 3 -- Amount of magazines of ammo this gun can take from an ARC-9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
 SWEP.ForceDefaultClip = nil -- Set to force a default amount of ammo this gun can have. Otherwise, this is controlled by console variables.
@@ -208,7 +208,7 @@ SWEP.SpreadAddMove = math.rad(100 / 37.5)
 SWEP.SpreadAddMidAir = 0.1
 -- SWEP.SpreadAddShooting = math.rad(5 / 37.5) -- math.rad(108 / 37.5)
 
-SWEP.RecoilPatternDrift = 12
+SWEP.RecoilPatternDrift = 7
 
 SWEP.UseVisualRecoil = true
 
@@ -470,12 +470,12 @@ SWEP.AttachmentElements = {
     },
     ["barrelgone"] = {
         Bodygroups = {
-            {3, 1},
+            {4, 1},
         }
     },
     ["stockgone"] = {
         Bodygroups = {
-            {4, 1},
+            {6, 1},
         }
     },
     ["bodymount_lasermixbody"] = {
@@ -489,44 +489,56 @@ SWEP.AttachmentElements = {
         }
     },
     ["barrel_extended"] = {
+        Bodygroups = {
+            {5, 1},
+        },
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.889, 0, 0),
+                Pos = Vector(1.62, 0, 0),
             },
         },
     },
     ["barrel_cavalry"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(3, 0, 0),
+                Pos = Vector(1.59, 0, 0),
             },
         },
     },
     ["barrel_reinforced"] = {
+        Bodygroups = {
+            {5, 1},
+        },
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.889, 0, 0),
+                Pos = Vector(0.91, 0, 0),
             },
         },
     },
-    ["barrel_ranger"] = {
+    ["barrel_liberator"] = {
+        Bodygroups = {
+            {5, 1},
+        },
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.889, 0, 0),
+                Pos = Vector(3.19, 0, 0),
             }
         },
     },
     ["barrel_rifled"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.51, 0, 0),
+                Pos = Vector(2.87, 0, 0),
             },
         },
     },
     ["barrel_taskforce"] = {
+        Bodygroups = {
+            {5, 1},
+        },
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.889, 0, 0),
+                Pos = Vector(2.36, 0, 0),
             }
         },
     },
@@ -640,15 +652,15 @@ SWEP.Attachments = {
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0.25, 0, -0.75),
+        Icon_Offset = Vector(-0.25, 0, -0.25),
         Category = {"bocw_bullfrog_wrap"},
     },
     {
         PrintName = "STOCK",
-        Bone = "tag_stock",
+        Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, 0),
+        Icon_Offset = Vector(-3, 0, 2.3),
         Category = {"bocw_bullfrog_stock"},
         InstalledElements = {"stockgone"},
     },
@@ -814,12 +826,12 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-        Time = 2.53,
+        Time = 2.5,
         NoMagSwap = true,
         MinProgress = 0.7,
         EventTable = {
             { s = "ARC9_BOCW.Bullfrog_reload_start", t = 0 },
-            { s = "ARC9_BOCW.Bullfrog_reload_magout", t = 0.5 },
+            { s = "ARC9_BOCW.Bullfrog_reload_magout", t = 0.45 },
             { s = "ARC9_BOCW.Bullfrog_reload_magin", t = 1.5 },
             { s = "ARC9_BOCW.Bullfrog_reload_end", t = 2.1 },
         },
@@ -885,12 +897,12 @@ SWEP.Animations = {
     },
     ["reload_fast"] = {
         Source = "reload_fast",
-        Time = 2.53,
+        Time = 2.5,
         MinProgress = 0.6,
         EventTable = {
             { s = "ARC9_BOCW.Bullfrog_reload_start", t = 0 },
-            { s = "ARC9_BOCW.Bullfrog_reload_magout", t = 0.2 },
-            { s = "ARC9_BOCW.Bullfrog_reload_magin", t = 1.6 },
+            { s = "ARC9_BOCW.Bullfrog_reload_magout", t = 0.3 },
+            { s = "ARC9_BOCW.Bullfrog_reload_magin", t = 1.2 },
             { s = "ARC9_BOCW.Bullfrog_reload_end", t = 1.9 },
         },
         IKTimeLine = {
@@ -922,8 +934,8 @@ SWEP.Animations = {
         MinProgress = 0.5,
         EventTable = {
             { s = "ARC9_BOCW.Bullfrog_reload_start", t = 0 },
-            { s = "ARC9_BOCW.Bullfrog_reload_magout", t = 0.2 },
-            { s = "ARC9_BOCW.Bullfrog_reload_magin", t = 1.5 },
+            { s = "ARC9_BOCW.Bullfrog_reload_magout", t = 0.3 },
+            { s = "ARC9_BOCW.Bullfrog_reload_magin", t = 1.2 },
             { s = "ARC9_BOCW.Bullfrog_boltback", t = 2.1 },
             { s = "ARC9_BOCW.Bullfrog_boltrelease", t = 2.25 },
             { s = "ARC9_BOCW.Bullfrog_reload_end", t = 2.4 },

@@ -623,7 +623,7 @@ SWEP.Attachments = {
     {
         PrintName = "MUZZLE",
         Bone = "tag_muzzle",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(-0.02, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
         Category = {"bocw_mp5_muzzle"},
@@ -907,10 +907,11 @@ SWEP.Animations = {
         Time = 2.62,
         MinProgress = 0.7,
         EventTable = {
-            { s = "ARC9_BOCW.MP5_reload_start", t = 0 },
-            { s = "ARC9_BOCW.MP5_reload_ext_magout", t = 0.3 },
-            { s = "ARC9_BOCW.MP5_reload_ext_magin", t = 1.2 },
-            { s = "ARC9_BOCW.MP5_reload_end", t = 2 },
+            { s = "ARC9_BOCW.MP5_reload_boltgrab", t = 0.1 },
+            { s = "ARC9_BOCW.MP5_reload_boltback", t = 0.15 },
+            { s = "ARC9_BOCW.MP5_reload_magout", t = 0.5 },
+            { s = "ARC9_BOCW.MP5_reload_magin", t = 1.7 },
+            { s = "ARC9_BOCW.MP5_reload_boltrelease", t = 2.1 },
         },
         IKTimeLine = {
             {
@@ -942,12 +943,11 @@ SWEP.Animations = {
         MagSwapTime = 1,
         DropMagAt = 0.6,
         EventTable = {
-            { s = "ARC9_BOCW.MP5_reload_empty_start", t = 0 },
-            { s = "ARC9_BOCW.MP5_reload_ext_empty_magout", t = 0.3 },
-            { s = "ARC9_BOCW.MP5_reload_ext_magin", t = 1.2 },
-            { s = "ARC9_BOCW.MP5_charginghandle_start", t = 2.2 },
-            { s = "ARC9_BOCW.MP5_charginghandle", t = 2.2 },
-            { s = "ARC9_BOCW.MP5_reload_empty_end", t = 2.8 },
+            { s = "ARC9_BOCW.MP5_reload_boltgrab", t = 0.1 },
+            { s = "ARC9_BOCW.MP5_reload_boltback", t = 0.15 },
+            { s = "ARC9_BOCW.MP5_reload_magout", t = 0.8 },
+            { s = "ARC9_BOCW.MP5_reload_magin", t = 1.95 },
+            { s = "ARC9_BOCW.MP5_reload_boltrelease", t = 2.6 },
         },
         IKTimeLine = {
             {

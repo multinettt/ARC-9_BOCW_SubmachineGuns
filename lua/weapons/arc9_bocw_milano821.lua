@@ -489,42 +489,42 @@ SWEP.AttachmentElements = {
     ["barrel_extended"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.889, 0, 0),
+                Pos = Vector(9.56, 0, 0),
             },
         },
     },
     ["barrel_cavalry"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(3, 0, 0),
+                Pos = Vector(10.06, 0, 0),
             },
         },
     },
     ["barrel_reinforced"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.889, 0, 0),
+                Pos = Vector(10.36, 0, 0),
             },
         },
     },
     ["barrel_ranger"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.889, 0, 0),
+                Pos = Vector(10.77, 0, 0),
             }
         },
     },
     ["barrel_rifled"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.51, 0, 0),
+                Pos = Vector(10.06, 0, 0),
             },
         },
     },
     ["barrel_taskforce"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.889, 0, 0),
+                Pos = Vector(10.98, 0, 0),
             }
         },
     },
@@ -592,10 +592,10 @@ SWEP.Attachments = {
     {
         PrintName = "MUZZLE",
         Bone = "tag_barrel",
-        Pos = Vector(8.2, 0, 0),
+        Pos = Vector(8.24, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        Category = {"bocw_milano821_muzzle"},
+        Category = {"bocw_milano821_muzzle", "bocw_smg_muzzle_west9"},
     },
     {
         PrintName = "BARREL",

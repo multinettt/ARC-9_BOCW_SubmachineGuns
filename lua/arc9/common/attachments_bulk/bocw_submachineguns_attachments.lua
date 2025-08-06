@@ -28,6 +28,15 @@ ATT.Category = "bocw_mp5_barrel"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_mp5_barrel_extended.mdl"
 
+ATT.DrawFunc = function(swep, model)
+
+	local elements = swep:GetElements()
+
+	if elements["bocw_mp5_sd_suppcheck"] then
+        model:SetBodygroup(1,1)
+    end
+end -- i like busted a whole load when this somehow worked
+
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
@@ -37,7 +46,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.4
 ATT.MuzzleParticleOverride_Priority = 100
 ATT.MuzzleDevice = true
 
-ATT.ActivateElements = {"barrel_extended"}
+ATT.ActivateElements = {"barrel_extended", "bocw_mp5_sd_barrelcheck"}
 
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
@@ -89,6 +98,15 @@ ATT.Category = "bocw_mp5_barrel"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_mp5_barrel_reinforced.mdl"
 
+ATT.DrawFunc = function(swep, model)
+
+	local elements = swep:GetElements()
+
+	if elements["bocw_mp5_sd_suppcheck"] then
+        model:SetBodygroup(1,1)
+    end
+end
+
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
@@ -102,7 +120,7 @@ ATT.SpeedMultSighted = 0.8
 ATT.MuzzleParticleOverride_Priority = 100
 ATT.MuzzleDevice = true
 
-ATT.ActivateElements = {"barrel_reinforced"}
+ATT.ActivateElements = {"barrel_reinforced", "bocw_mp5_sd_barrelcheck"}
 
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
@@ -123,6 +141,15 @@ ATT.Category = "bocw_mp5_barrel"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_mp5_barrel_ranger.mdl"
 
+ATT.DrawFunc = function(swep, model)
+
+	local elements = swep:GetElements()
+
+	if elements["bocw_mp5_sd_suppcheck"] then
+        model:SetBodygroup(1,1)
+    end
+end
+
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
@@ -134,7 +161,7 @@ ATT.SpeedMultSighted = 0.75
 ATT.MuzzleParticleOverride_Priority = 100
 ATT.MuzzleDevice = true
 
-ATT.ActivateElements = {"barrel_ranger"}
+ATT.ActivateElements = {"barrel_ranger", "bocw_mp5_sd_barrelcheck"}
 
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
@@ -187,6 +214,15 @@ ATT.Category = "bocw_mp5_barrel"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_mp5_barrel_taskforce.mdl"
 
+ATT.DrawFunc = function(swep, model)
+
+	local elements = swep:GetElements()
+
+	if elements["bocw_mp5_sd_suppcheck"] then
+        model:SetBodygroup(1,1)
+    end
+end
+
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
@@ -202,7 +238,7 @@ ATT.RecoilSideMult = 1.15
 ATT.MuzzleParticleOverride_Priority = 100
 ATT.MuzzleDevice = true
 
-ATT.ActivateElements = {"barrel_taskforce"}
+ATT.ActivateElements = {"barrel_taskforce", "bocw_mp5_sd_barrelcheck"}
 
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
@@ -3308,7 +3344,7 @@ ATT = {}
 
 ATT.PrintName = "MP5 Muzzle Device"
 ATT.CompactName = "MP5 MUZZLE"
-ATT.Icon = Material("entities/acwatt_bocw.png", "mips smooth")
+ATT.Icon = Material("entities/bocw_atts/muzzles/mp5_base.png", "mips smooth")
 ATT.Description = [[Default MP5 muzzle device.]]
 
 ATT.SortOrder = -10
@@ -3354,7 +3390,7 @@ ATT = {}
 
 ATT.PrintName = "KSP 45 Muzzle Device"
 ATT.CompactName = "KSP MUZZLE"
-ATT.Icon = Material("entities/acwatt_bocw.png", "mips smooth")
+ATT.Icon = Material("entities/bocw_atts/muzzles/ksp45_base.png", "mips smooth")
 ATT.Description = [[Default KSP 45 muzzle device.]]
 
 ATT.SortOrder = -10
@@ -3378,7 +3414,7 @@ ATT = {}
 
 ATT.PrintName = "Bullfrog Muzzle Device"
 ATT.CompactName = "MUZZLE"
-ATT.Icon = Material("entities/acwatt_bocw.png", "mips smooth")
+ATT.Icon = Material("entities/bocw_atts/muzzles/bullfrog_base.png", "mips smooth")
 ATT.Description = [[Default Bullfrog muzzle device.]]
 
 ATT.SortOrder = -10

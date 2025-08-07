@@ -712,6 +712,48 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     local attached = data.elements
 end
 
+SWEP.HookP_NameChange = function(self, name)
+
+    local attached = self:GetElements()
+    local gunname = "MP5K"
+
+    local hasNoStock = attached["bocw_mp5_stock_nostock"]
+    local hasBarrel = attached["bocw_mp5_sd_barrelcheck"]
+    local hasSupp = attached["bocw_mp5_sd_suppcheck"]
+    local hasCheekRest = attached["stock_nonretractable"]
+
+    if hasBarrel and hasSupp then
+
+        if hasNoStock then
+            gunname = "MP5SD1"
+
+        elseif hasCheekRest then
+            gunname = "MP5SD2"
+
+        else
+            gunname = "MP5SD3"
+    end
+
+    elseif hasBarrel then
+
+        if hasNoStock then
+            gunname = "MP5A1"
+
+        elseif hasCheekRest then
+            gunname = "MP5A2"
+
+        else
+            gunname = "MP5A3"
+    end
+
+    elseif hasNoStock then
+        gunname = "MP5A1"
+    end
+
+    return gunname
+end
+
+
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     
     local elements = swep:GetElements()
@@ -754,7 +796,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.5,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.6,
                 lhik = 1,
                 rhik = 0
             },
@@ -769,12 +816,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.4,
+                t = 0.5,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.5,
+                t = 0.6,
                 lhik = 1,
                 rhik = 0
             },
@@ -860,7 +907,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.9,
+                t = 0.95,
                 lhik = 1,
                 rhik = 0
             },
@@ -896,7 +943,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.95,
+                t = 0.9,
                 lhik = 1,
                 rhik = 0
             },
@@ -920,7 +967,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.2,
+                t = 0.1,
                 lhik = 0,
                 rhik = 0
             },
@@ -946,7 +993,7 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.MP5_reload_boltgrab", t = 0.1 },
             { s = "ARC9_BOCW.MP5_reload_boltback", t = 0.15 },
             { s = "ARC9_BOCW.MP5_reload_magout", t = 0.8 },
-            { s = "ARC9_BOCW.MP5_reload_magin", t = 1.95 },
+            { s = "ARC9_BOCW.MP5_reload_magin", t = 2.1 },
             { s = "ARC9_BOCW.MP5_reload_boltrelease", t = 2.6 },
         },
         IKTimeLine = {
@@ -966,7 +1013,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.95,
+                t = 0.9,
                 lhik = 1,
                 rhik = 0
             },
@@ -977,10 +1024,8 @@ SWEP.Animations = {
         Time = 2.62,
         MinProgress = 0.6,
         EventTable = {
-            { s = "ARC9_BOCW.MP5_reload_start", t = 0 },
-            { s = "ARC9_BOCW.MP5_reload_magout", t = 0.2 },
-            { s = "ARC9_BOCW.MP5_reload_magin", t = 0.9 },
-            { s = "ARC9_BOCW.MP5_reload_end", t = 2 },
+            { s = "ARC9_BOCW.MP5_reload_magout", t = 0.4 },
+            { s = "ARC9_BOCW.MP5_reload_magin", t = 1.8 },
         },
         IKTimeLine = {
             {
@@ -1010,10 +1055,8 @@ SWEP.Animations = {
         Time = 2.62,
         MinProgress = 0.65,
         EventTable = {
-            { s = "ARC9_BOCW.MP5_reload_start", t = 0 },
-            { s = "ARC9_BOCW.MP5_reload_magout", t = 0.2 },
-            { s = "ARC9_BOCW.MP5_reload_magin", t = 0.9 },
-            { s = "ARC9_BOCW.MP5_reload_end", t = 2 },
+            { s = "ARC9_BOCW.MP5_reload_magout", t = 0.4 },
+            { s = "ARC9_BOCW.MP5_reload_magin", t = 1.8 },
         },
         IKTimeLine = {
             {
@@ -1043,13 +1086,10 @@ SWEP.Animations = {
         Time = 3.75,
         MinProgress = 0.5,
         EventTable = {
-            { s = "ARC9_BOCW.MP5_reload_empty_start", t = 0 },
-            { s = "ARC9_BOCW.MP5_reload_empty_magout", t = 0.2 },
-            { s = "ARC9_BOCW.MP5_reload_empty_maginstart", t = 0.7 },
-            { s = "ARC9_BOCW.MP5_reload_magin", t = 0.9 },
-            { s = "ARC9_BOCW.MP5_charginghandle_start", t = 2.1 },
-            { s = "ARC9_BOCW.MP5_charginghandle", t = 2.1 },
-            { s = "ARC9_BOCW.MP5_reload_empty_end", t = 2.7 },
+            { s = "ARC9_BOCW.MP5_reload_magout", t = 0.4 },
+            { s = "ARC9_BOCW.MP5_reload_magin", t = 2 },
+            { s = "ARC9_BOCW.MP5_reload_boltback", t = 2.6 },
+            { s = "ARC9_BOCW.MP5_reload_boltrelease", t = 2.8 },
         },
         IKTimeLine = {
             {
@@ -1080,13 +1120,10 @@ SWEP.Animations = {
         MinProgress = 0.5,
         DropMagAt = 1.1,
         EventTable = {
-            { s = "ARC9_BOCW.MP5_reload_empty_start", t = 0 },
-            { s = "ARC9_BOCW.MP5_reload_empty_magout", t = 0.2 },
-            { s = "ARC9_BOCW.MP5_reload_empty_maginstart", t = 0.7 },
-            { s = "ARC9_BOCW.MP5_reload_magin", t = 0.9 },
-            { s = "ARC9_BOCW.MP5_charginghandle_start", t = 2.1 },
-            { s = "ARC9_BOCW.MP5_charginghandle", t = 2.1 },
-            { s = "ARC9_BOCW.MP5_reload_empty_end", t = 2.7 },
+            { s = "ARC9_BOCW.MP5_reload_magout", t = 0.4 },
+            { s = "ARC9_BOCW.MP5_reload_magin", t = 2 },
+            { s = "ARC9_BOCW.MP5_reload_boltback", t = 2.6 },
+            { s = "ARC9_BOCW.MP5_reload_boltrelease", t = 2.8 },
         },
         IKTimeLine = {
             {
@@ -1139,22 +1176,17 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.2,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.25,
+                t = 0.1,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.45,
+                t = 0.8,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.5,
+                t = 0.9,
                 lhik = 1,
                 rhik = 0
             },
@@ -1173,22 +1205,17 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.2,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.25,
+                t = 0.1,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.45,
+                t = 0.8,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.5,
+                t = 0.9,
                 lhik = 1,
                 rhik = 0
             },

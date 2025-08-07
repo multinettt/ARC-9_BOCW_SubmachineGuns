@@ -570,7 +570,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.SpeedMultSights = 1.1
 
-ATT.ActivateElements = {"stockmountgone"}
+ATT.ActivateElements = {"stockmountgone", "stock_nonretractable"}
 
 ARC9.LoadAttachment(ATT, "bocw_mp5_stock_tactical")
 
@@ -618,7 +618,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.SpeedMult = 1.05
 
-ATT.ActivateElements = {"stockmountgone"}
+ATT.ActivateElements = {"stockmountgone", "stock_nonretractable"}
 
 ARC9.LoadAttachment(ATT, "bocw_mp5_stock_duster")
 
@@ -671,7 +671,7 @@ ATT.SpeedMultSighted = 1.15
 
 ATT.SpreadMultHipFire = 1.15
 
-ATT.ActivateElements = {"stockmountgone"}
+ATT.ActivateElements = {"stockmountgone", "stock_nonretractable"}
 
 ARC9.LoadAttachment(ATT, "bocw_mp5_stock_sascombat")
 
@@ -699,7 +699,7 @@ ATT.SpeedMultSighted = 1.1
 
 ATT.SpreadMultHipFire = 1.3
 
-ATT.ActivateElements = {"stockmountgone"}
+ATT.ActivateElements = {"stockmountgone", "stock_nonretractable"}
 
 ARC9.LoadAttachment(ATT, "bocw_mp5_stock_raider")
 --[[

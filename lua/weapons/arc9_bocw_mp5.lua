@@ -888,7 +888,7 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.MP5_reload_boltback", t = 0.15 },
             { s = "ARC9_BOCW.MP5_reload_magout", t = 0.5 },
             { s = "ARC9_BOCW.MP5_reload_magin", t = 1.7 },
-            { s = "ARC9_BOCW.MP5_reload_boltrelease", t = 2.1 },
+            { s = "ARC9_BOCW.MP5_reload_boltrelease", t = 2.05 },
         },
         IKTimeLine = {
             {

@@ -600,7 +600,7 @@ SWEP.Attachments = {
         Bone = "tag_muzzle",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(-2, 0, 0),
+        Icon_Offset = Vector(-2.75, 0, 0),
         Category = {"bocw_ak74u_barrel"},
         InstalledElements = {"handguardgone"},
     },

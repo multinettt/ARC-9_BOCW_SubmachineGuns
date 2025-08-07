@@ -37,7 +37,7 @@ SWEP.TrueName = "PP-19 Bizon-2"
 SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
     Manufacturer = "Izhmash",
-    Calibre = "9x19mm Parabellum",
+    Calibre = "9x18mm Makarov",
     Mechanism = "Blowback, closed-bolt",
     Country = "Russia",
     Year = 1996
@@ -323,12 +323,10 @@ SWEP.BreathRunOutSound = "arc9/breath_runout.wav"
 SWEP.MuzzleParticle = "muzzleflash_1" -- Used for some muzzle effects.
 --SWEP.MuzzleEffect = "MuzzleFlash"
 
-SWEP.NoShellEject = true
-
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 
 SWEP.ShellSmoke = true
-SWEP.NoShellEject = true
+SWEP.NoShellEject = false
 
 SWEP.ShellScale = 1.2
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
@@ -609,7 +607,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        Category = {"bocw_bullfrog_muzzle"},
+        Category = {"bocw_bullfrog_muzzle", "bocw_smg_muzzle_east9"},
         Installed = "bocw_bullfrog_muzzle_base",
         Integral = "bocw_bullfrog_muzzle_base",
     },

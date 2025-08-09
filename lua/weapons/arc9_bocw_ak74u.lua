@@ -186,29 +186,29 @@ SWEP.Firemodes = {
 
 -------------------------- RECOIL
 
-SWEP.Recoil = 1.1
-SWEP.RecoilSide = 0.3
-SWEP.RecoilUp = 0.4
+SWEP.Recoil = 1
+SWEP.RecoilSide = -0.8
+SWEP.RecoilUp = 0.5
 
-SWEP.RecoilRandomUp = 0
-SWEP.RecoilRandomSide = 0
+SWEP.RecoilRandomUp = 0.01
+SWEP.RecoilRandomSide = 0.01
 
 SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0.1 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 2
+SWEP.RecoilAutoControl = 0
 SWEP.RecoilKick = 2
 
-SWEP.Spread = math.rad(1.3 / 37.5)
-SWEP.SpreadMultRecoil = 1.2
+SWEP.Spread = math.rad(1 / 37.5)
+SWEP.SpreadMultRecoil = 1.8
 
 SWEP.SpreadMultSights = 0.1
-SWEP.SpreadAddHipFire = math.rad(200 / 37.5)
+SWEP.SpreadAddHipFire = math.rad(110 / 37.5)
 SWEP.SpreadAddMove = math.rad(100 / 37.5)
-SWEP.SpreadAddMidAir = 0.1
+SWEP.SpreadAddMidAir = math.rad(100 / 37.5)
 -- SWEP.SpreadAddShooting = math.rad(5 / 37.5) -- math.rad(108 / 37.5)
 
-SWEP.RecoilPatternDrift = 10
+SWEP.RecoilPatternDrift = 40
 
 SWEP.UseVisualRecoil = true
 
@@ -484,14 +484,14 @@ SWEP.AttachmentElements = {
             {9, 1},
         }
     },
-    ["bodymount_lasermixbody"] = {
+    ["bodymount_laserlight"] = {
         Bodygroups = {
             {10, 1},
         }
     },
-    ["bodymount_flashlight"] = {
+    ["bodymount_mixbody"] = {
         Bodygroups = {
-            {11, 1},
+            {10, 2},
         }
     },
     ["barrel_extended"] = {
@@ -614,11 +614,21 @@ SWEP.Attachments = {
     },
     {
         PrintName = "BODY",
-        Bone = "tag_weapon",
-        Pos = Vector(11, 1.18, 3.77),
-        Ang = Angle(0, 0, -90),
+        Bone = "tag_laser_attach",
+        Pos = Vector(-1.4, -0.45, -0.05),
+        Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        Category = {"bocw_xm4_body", "bocw_body_flashlight_west"},
+        Category = {"bocw_submachineguns_body_lasereast", "bocw_submachineguns_body_flasheast"},
+        InstalledElements = {"bodymount_laserlight"},
+    },
+    {
+        Hidden = true,
+        MergeSlots = {5,6},
+        Bone = "tag_laser_attach",
+        Pos = Vector(-1.2, -0.5, -0.05),
+        Ang = Angle(0, 0, 0),
+        Category = {"bocw_submachineguns_body_mixeast"},
+        InstalledElements = {"bodymount_mixbody"},
     },
     {
         PrintName = "UNDRBARREL",

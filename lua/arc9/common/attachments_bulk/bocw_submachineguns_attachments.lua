@@ -2886,6 +2886,171 @@ ATT.ActivateElements = {"barrel_taskforce"}
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
 ARC9.LoadAttachment(ATT, "bocw_bullfrog_barrel_taskforce")
+--========== UNDERBARREL =================
+ATT = {}
+
+ATT.PrintName = "Foregrip"
+ATT.CompactName = "FOREGRIP"
+ATT.Icon = Material("entities/bocw_atts/underbarrels/bullfrog_foregrip.png", "mips smooth")
+ATT.Description = [[Bakelite grip plates for improved recoil control.
+
+The Grip returns in Call of Duty: Black Ops Cold War as the Foregrip and it is an Underbarrel attachment available for Assault Rifles, Light Machine Guns and Submachine Guns. It increases control over horizontal recoil. For the MAC-10, it also helps with controlling vertical recoil. The KSP 45 lacks the Foregrip in favor of the Front Grip.]]
+
+ATT.SortOrder = 1
+
+ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_underbarrel_foregrip.mdl"
+
+ATT.Category = {"bocw_bullfrog_underbarrel"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.RecoilSideMult = 0.85
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_bullfrog_underbarrel_foregrip")
+
+ATT = {}
+
+ATT.PrintName = "Red Cell Foregrip"
+ATT.CompactName = "INFIL GRIP"
+ATT.Icon = Material("entities/bocw_atts/underbarrels/bullfrog_redcell.png", "mips smooth")
+ATT.Description = [[Segmented polymer grip plates for faster weapon melee combat and improved sprint speed.
+
+The Red Cell Foregrip is an Underbarrel attachment available for all Submachine Guns in Call of Duty: Black Ops Cold War. It increases the speed of sprinting and giving a increased speed to melee attacks but at the cost of general movement speeds.]]
+
+ATT.SortOrder = 2
+
+ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_underbarrel_redcell.mdl"
+
+ATT.Category = {"bocw_bullfrog_underbarrel"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.SpeedMultSprint = 1.04
+ATT.BashSpeedMult = 1.30
+
+ATT.SpeedMult = 0.97
+ATT.SpeedMultShooting = 0.97
+ATT.SpeedMultSighted = 0.97
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_bullfrog_underbarrel_redcell")
+
+ATT = {}
+
+ATT.PrintName = "Patrol Grip"
+ATT.CompactName = "PATROL GRIP"
+ATT.Icon = Material("entities/bocw_atts/underbarrels/bullfrog_patrol.png", "mips smooth")
+ATT.Description = [[Segmented polymer grip plates for faster sprint speed and improved sprint recovery.
+
+The Patrol Grip is an Underbarrel attachment available for all Primary Weapons in Call of Duty: Black Ops Cold War. It increases the speed of sprinting.]]
+
+ATT.SortOrder = 3
+
+ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_underbarrel_patrol.mdl"
+
+ATT.Category = {"bocw_bullfrog_underbarrel"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.SpeedMultSprint = 1.04
+ATT.SprintToFireTimeMult = 0.97
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_bullfrog_underbarrel_patrol")
+
+ATT = {}
+
+ATT.PrintName = "Bruiser Grip"
+ATT.CompactName = "BRUISR GRIP"
+ATT.Icon = Material("entities/bocw_atts/underbarrels/bullfrog_bruiser.png", "mips smooth")
+ATT.Description = [[Stubby polymer foregrip for faster weapon melee combat and movement speeds.
+
+The Bruiser Grip is an Underbarrel attachment available for all Primary Weapons in Call of Duty: Black Ops Cold War. It gives a minor increase to movement speeds alongside an increase to melee swing speeds.]]
+
+ATT.SortOrder = 4
+
+ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_underbarrel_bruiser.mdl"
+
+ATT.Category = {"bocw_bullfrog_underbarrel"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.SpeedMult = 1.03
+ATT.SpeedMultSprint = 1.03
+ATT.SpeedMultShooting = 1.03
+ATT.SpeedMultSighted = 1.03
+ATT.BashSpeedMult = 1.40
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_bullfrog_underbarrel_bruiser")
+
+ATT = {}
+
+ATT.PrintName = "Spetsnaz Grip"
+ATT.CompactName = "SPTSNZ GRP"
+ATT.Icon = Material("entities/bocw_atts/underbarrels/bullfrog_spetsnaz.png", "mips smooth")
+ATT.Description = [[Sectioned polymer grip plates for improved recoil control.
+
+The Spetsnaz Grip is an Underbarrel attachment available for all Warsaw Pact related Primary weapons. It improves recoil in both horizontal and vertical, primary horizontal but at the cost of a lowered movement speed while shooting. The NATO equivalent is the Field Agent Grip.]]
+
+ATT.SortOrder = 5
+
+ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_underbarrel_spetsnaz.mdl"
+
+ATT.Category = {"bocw_bullfrog_underbarrel"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.RecoilUpMult = 0.94
+ATT.RecoilSideMult = 0.8
+
+ATT.SpeedMultShooting = 0.7
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_bullfrog_underbarrel_spetsnaz")
+
+ATT = {}
+
+ATT.PrintName = "VDV Speedgrip"
+ATT.CompactName = "VDV SPEED"
+ATT.Icon = Material("entities/bocw_atts/underbarrels/bullfrog_vdvspeed.png", "mips smooth")
+ATT.Description = [[Solid polymer grip for improved sprint speed and recoil control.
+
+The VDV Speedgrip is an Underbarrel attachment available for Warsaw Pact related Primary weapons. It improves horizontal recoil and movement speed while sprinting but at the cost of a lowered general movement speeds. The NATO equivalent is the SFOD Speedgrip alongside another Warsaw Pact alternative in the Spetsnaz Speedgrip.]]
+
+ATT.SortOrder = 6
+
+ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_underbarrel_vdvspeed.mdl"
+
+ATT.Category = {"bocw_bullfrog_underbarrel"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.SpeedMultSprint = 1.03
+ATT.RecoilSideMult = 0.85
+
+ATT.SpeedMult = 0.94
+ATT.SpeedMultShooting = 0.94
+ATT.SpeedMultSighted = 0.94
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_bullfrog_underbarrel_vdvspeed")
 --========== MAGAZINE =================
 ATT = {}
 

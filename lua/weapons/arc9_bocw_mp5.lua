@@ -484,19 +484,9 @@ SWEP.AttachmentElements = {
             {6, 1},
         }
     },
-    ["bayonetgone"] = {
+    ["bodymount"] = {
         Bodygroups = {
-            {9, 1},
-        }
-    },
-    ["bodymount_lasermixbody"] = {
-        Bodygroups = {
-            {10, 1},
-        }
-    },
-    ["bodymount_flashlight"] = {
-        Bodygroups = {
-            {11, 1},
+            {7, 1},
         }
     },
     ["barrel_extended"] = {
@@ -572,11 +562,11 @@ SWEP.AttachmentSlotMods = {
 -- Adjust the stats of specific attachments when applied to this gun
 SWEP.AttachmentTableOverrides = {
     ["bocw_body_flashlight_west"] = {
-        ModelOffset = Vector(0,0.02,-0.98),
+        ModelOffset = Vector(0,0,-0.45),
         Scale = 1,
     },
     ["bocw_body_flashlightpro_west"] = {
-        ModelOffset = Vector(0,0.02,-0.98),
+        ModelOffset = Vector(0,0,-0.45),
         Scale = 1,
     },
     ["bocw_optic_visiontech2x"] = {
@@ -642,10 +632,11 @@ SWEP.Attachments = {
     {
         PrintName = "BODY",
         Bone = "tag_weapon",
-        Pos = Vector(11, 1.18, 3.77),
-        Ang = Angle(0, 0, -90),
+        Pos = Vector(9, 0.94, 4.64),
+        Ang = Angle(0, 0, -105),
         Icon_Offset = Vector(0, 0, 0),
         Category = {"bocw_xm4_body", "bocw_body_flashlight_west"},
+        InstalledElements = {"bodymount"},
     },
     {
         PrintName = "UNDRBARREL",

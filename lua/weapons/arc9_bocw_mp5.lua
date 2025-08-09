@@ -7,7 +7,7 @@
 --   SWEP INFORMATION:
 
 --   BASE  : ARC9
---   BUILD : v2025.7
+--   BUILD : v2025.8
 --   SR.NO : 89-01990
 
 
@@ -29,7 +29,7 @@ SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Black Ops Cold War"
-SWEP.SubCategory = "Submachine Guns"
+SWEP.SubCategory = "2Submachine Guns"
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "MP5"
@@ -628,6 +628,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
         Category = {"bocw_mp5_muzzle"},
         Installed = "bocw_mp5_muzzle_base",
+        Integral = "bocw_mp5_muzzle_base",
     },
     {
         PrintName = "BARREL",

@@ -29,7 +29,7 @@ SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Black Ops Cold War"
-SWEP.SubCategory = "Submachine Guns"
+SWEP.SubCategory = "2Submachine Guns"
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "AK-74u"
@@ -594,6 +594,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
         Category = {"bocw_ak74u_muzzle", "bocw_smg_muzzle_east545"},
         Installed = "bocw_ak74u_muzzle_base",
+        Integral = "bocw_ak74u_muzzle_base",
     },
     {
         PrintName = "BARREL",

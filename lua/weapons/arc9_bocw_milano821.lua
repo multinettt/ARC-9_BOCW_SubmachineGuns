@@ -7,7 +7,7 @@
 --   SWEP INFORMATION:
 
 --   BASE  : ARC9
---   BUILD : v2025.7
+--   BUILD : v2025.8
 --   SR.NO : 524019
 
 
@@ -29,7 +29,7 @@ SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Black Ops Cold War"
-SWEP.SubCategory = "Submachine Guns"
+SWEP.SubCategory = "2Submachine Guns"
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Milano 821"

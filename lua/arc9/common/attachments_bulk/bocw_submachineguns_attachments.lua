@@ -1384,6 +1384,15 @@ ATT.Category = "bocw_ak74u_barrel"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_barrel_extended.mdl"
 
+ATT.DrawFunc = function(swep, model)
+
+	local elements = swep:GetElements()
+
+	if elements["ak74u_mag_ext"] then
+        model:SetBodygroup(1,1)
+    end
+end
+
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
@@ -1393,7 +1402,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.4
 ATT.MuzzleParticleOverride_Priority = 100
 ATT.MuzzleDevice = true
 
-ATT.ActivateElements = {"barrel_extended"}
+ATT.ActivateElements = {"barrel_extended", "bocw_ak74u_val_barrelcheck"}
 
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
@@ -1443,7 +1452,16 @@ ATT.SortOrder = 9.5
 
 ATT.Category = "bocw_ak74u_barrel"
 
-ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_barrel_vdvreinforced.mdl"
+ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_barrel_reinforced.mdl"
+
+ATT.DrawFunc = function(swep, model)
+
+	local elements = swep:GetElements()
+
+	if elements["ak74u_mag_ext"] then
+        model:SetBodygroup(1,1)
+    end
+end
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -1458,7 +1476,7 @@ ATT.SpeedMultSighted = 0.8
 ATT.MuzzleParticleOverride_Priority = 100
 ATT.MuzzleDevice = true
 
-ATT.ActivateElements = {"barrel_reinforced"}
+ATT.ActivateElements = {"barrel_reinforced", "bocw_ak74u_val_barrelcheck"}
 
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
@@ -1479,6 +1497,19 @@ ATT.Category = "bocw_ak74u_barrel"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_barrel_liberator.mdl"
 
+ATT.DrawFunc = function(swep, model)
+
+	local elements = swep:GetElements()
+
+	if elements["ak74u_mag_ext"] then
+        model:SetBodygroup(1,1)
+    end
+
+	if elements["bocw_ak74u_val_suppcheck"] then
+        model:SetBodygroup(2,1)
+    end
+end
+
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
@@ -1490,7 +1521,7 @@ ATT.SpeedMultSighted = 0.75
 ATT.MuzzleParticleOverride_Priority = 100
 ATT.MuzzleDevice = true
 
-ATT.ActivateElements = {"barrel_liberator"}
+ATT.ActivateElements = {"barrel_liberator", "bocw_ak74u_val_barrelcheck"}
 
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
@@ -1543,6 +1574,19 @@ ATT.Category = "bocw_ak74u_barrel"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_barrel_taskforce.mdl"
 
+ATT.DrawFunc = function(swep, model)
+
+	local elements = swep:GetElements()
+
+	if elements["ak74u_mag_ext"] then
+        model:SetBodygroup(1,1)
+    end
+
+	if elements["bocw_ak74u_val_suppcheck"] then
+        model:SetBodygroup(2,1)
+    end
+end
+
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
@@ -1558,7 +1602,7 @@ ATT.RecoilSideMult = 1.15
 ATT.MuzzleParticleOverride_Priority = 100
 ATT.MuzzleDevice = true
 
-ATT.ActivateElements = {"barrel_taskforce"}
+ATT.ActivateElements = {"barrel_taskforce", "bocw_ak74u_val_barrelcheck"}
 
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 

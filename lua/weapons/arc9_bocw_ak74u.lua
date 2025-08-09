@@ -710,6 +710,10 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
 
     local vm = data.model
     local attached = data.elements
+
+    if attached["bocw_ak74u_val_barrelcheck"] and attached["bocw_ak74u_val_suppcheck"] then
+        vm:SetBodygroup(7,1) -- this is to remove frontsight when val mode is on
+    end
 end
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)

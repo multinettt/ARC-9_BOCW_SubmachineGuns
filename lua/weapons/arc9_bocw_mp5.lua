@@ -295,7 +295,7 @@ SWEP.FirstDistantShootSoundSilenced = nil       -- First distant fire silenced
 
 SWEP.Silencer = false -- Silencer installed or not?
 
-SWEP.DryFireSound = "ARC9_BOCW.Shared_DryFire_AR"
+SWEP.DryFireSound = "ARC9_BOCW.Shared_DryFire_SMG"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 SWEP.ToggleAttSound = "items/flashlight1.wav"

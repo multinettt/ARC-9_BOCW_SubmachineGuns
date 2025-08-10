@@ -564,6 +564,21 @@ sound.Add({
     sound = "weapons/arc9/bocw_ksp45/ksp45_fire_silenced.wav"
 })
 
+sound.Add({
+    name = "ARC9_BOCW.KSP45_fire_burst",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 100,
+    sound = "weapons/arc9/bocw_ksp45/ksp45_fire_burst.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.KSP45_fire_silenced_burst",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_ksp45/ksp45_fire_silenced_burst.wav"
+})
+
 sound.Add({ -- WARZONE
     name = "ARC9_BOCW.KSP45_fire_wz",
     channel = CHAN_STATIC,

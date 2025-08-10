@@ -178,9 +178,14 @@ SWEP.Firemodes = {
         Mode = 3,
         RunawayBurst = true,
         PostBurstDelay = 0.088,
+        FirstShootSound = "ARC9_BOCW.KSP45_fire_burst",
+        FirstShootSoundSilenced = "ARC9_BOCW.KSP45_fire_silenced_burst",
+        ShootSound = nil
     },
     {
         Mode = -1,
+        FirstShootSound = nil,
+        ShootSound = "ARC9_BOCW.KSP45_fire"
     },
 }
 
@@ -280,13 +285,13 @@ SWEP.ShootPitch = 100
 SWEP.ShootPitchVariation = 0.05
 
 --SWEP.FirstShootSound = nil
-SWEP.ShootSound = "ARC9_BOCW.KSP45_fire"
+--SWEP.ShootSound = "ARC9_BOCW.KSP45_fire"
 --SWEP.ShootSoundIndoor = "ARC9_BOCW.KSP45_fire_int_decay"                  -- Fire indoors
 SWEP.ShootSoundSilenced = "ARC9_BOCW.KSP45_fire_silenced"                    -- Fire silenced
 SWEP.ShootSoundIndoorSilenced = nil             -- Fire indoors silenced
 SWEP.FirstShootSoundSilenced = nil              -- First fire silenced
 SWEP.FirstDistantShootSound = nil               -- First distant fire
-SWEP.DistantShootSound = "ARC9_BOCW.Shared_Decay_Close_Pistol"                     -- Distant fire
+SWEP.DistantShootSound = "ARC9_BOCW.Shared_Decay_Close_M16"                     -- Distant fire
 SWEP.DistantShootSoundIndoor = nil              -- Distant fire indoors
 SWEP.DistantShootSoundSilenced = "ARC9_BOCW.Shared_Decay_Close_Suppressor"            -- Distant fire silenced
 SWEP.DistantShootSoundIndoorSilenced = nil      -- Distant fire indoors silenced
@@ -294,7 +299,7 @@ SWEP.FirstDistantShootSoundSilenced = nil       -- First distant fire silenced
 
 SWEP.Silencer = false -- Silencer installed or not?
 
-SWEP.DryFireSound = "ARC9_BOCW.Shared_DryFire_AR"
+SWEP.DryFireSound = "ARC9_BOCW.Shared_DryFire_SMG"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 SWEP.ToggleAttSound = "items/flashlight1.wav"
@@ -323,12 +328,10 @@ SWEP.BreathRunOutSound = "arc9/breath_runout.wav"
 SWEP.MuzzleParticle = "muzzleflash_1" -- Used for some muzzle effects.
 --SWEP.MuzzleEffect = "MuzzleFlash"
 
-SWEP.NoShellEject = true
-
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 
 SWEP.ShellSmoke = true
-SWEP.NoShellEject = true
+SWEP.NoShellEject = false
 
 SWEP.ShellScale = 1.2
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)

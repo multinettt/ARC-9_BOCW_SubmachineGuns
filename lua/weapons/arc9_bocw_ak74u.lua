@@ -187,7 +187,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 SWEP.Recoil = 1
-SWEP.RecoilSide = -0.8
+SWEP.RecoilSide = -0.7
 SWEP.RecoilUp = 0.5
 
 SWEP.RecoilRandomUp = 0.01
@@ -294,7 +294,7 @@ SWEP.FirstDistantShootSoundSilenced = nil       -- First distant fire silenced
 
 SWEP.Silencer = false -- Silencer installed or not?
 
-SWEP.DryFireSound = "ARC9_BOCW.Shared_DryFire_AR"
+SWEP.DryFireSound = "ARC9_BOCW.Shared_DryFire_SMG"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 SWEP.ToggleAttSound = "items/flashlight1.wav"

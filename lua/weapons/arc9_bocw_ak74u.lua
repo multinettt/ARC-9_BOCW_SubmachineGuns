@@ -187,7 +187,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 SWEP.Recoil = 1
-SWEP.RecoilSide = -0.7
+SWEP.RecoilSide = -0.5
 SWEP.RecoilUp = 0.5
 
 SWEP.RecoilRandomUp = 0.01

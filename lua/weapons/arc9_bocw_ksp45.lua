@@ -615,11 +615,11 @@ SWEP.Attachments = {
     },
     {
         PrintName = "BODY",
-        Bone = "tag_weapon",
-        Pos = Vector(11, 1.18, 3.77),
-        Ang = Angle(0, 0, -90),
-        Icon_Offset = Vector(0, 0, 0),
-        Category = {"bocw_xm4_body", "bocw_body_flashlight_west"},
+        Bone = "tag_barrel",
+        Pos = Vector(5.74, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, -1),
+        Category = {"bocw_ksp45_body"},
     },
     {
         PrintName = "UNDRBARREL",

@@ -3641,3 +3641,135 @@ ATT.MuzzleDevice = true
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
 ARC9.LoadAttachment(ATT, "bocw_bullfrog_muzzle_base")
+
+--
+
+ATT = {}
+
+ATT.PrintName = "Laser Mount"
+ATT.CompactName = "LASER MNT"
+ATT.Icon = Material("entities/bocw_atts/mounts/lasermixbody.png", "mips smooth")
+ATT.Description = [[Barrel installed mount for laser body attachments on the KSP 45.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+ATT.Free = true
+
+ATT.Category = {"bocw_ksp45_body"}
+
+ATT.Model = "models/weapons/arc9/atts/bocw_ksp45_mount_body.mdl"
+ATT.ModelBodygroups = "00"
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = "BODY",
+        Bone = "tag_weapon",
+        Pos = Vector(-1.4, 0, 1.9),
+        Ang = Angle(0, 0, 90),
+        Icon_Offset = Vector(0, 0, 0),
+        Category = {"bocw_submachineguns_body_laserwest", "bocw_submachineguns_body_mixwest"},
+    }
+}
+
+ARC9.LoadAttachment(ATT, "bocw_ksp45_mount_lasermix")
+
+ATT = {}
+
+ATT.PrintName = "Flashlight Mount"
+ATT.CompactName = "FLASH MNT"
+ATT.Icon = Material("entities/bocw_atts/mounts/flashlight.png", "mips smooth")
+ATT.Description = [[Barrel installed mount for flashlights on the KSP 45.]]
+ATT.SortOrder = 1
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+ATT.Free = true
+
+ATT.Category = {"bocw_ksp45_body"}
+
+ATT.Model = "models/weapons/arc9/atts/bocw_ksp45_mount_body.mdl"
+ATT.ModelBodygroups = "01"
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = "BODY",
+        Bone = "tag_weapon",
+        Pos = Vector(-1.4, 0, 2.42),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0.65, 0, 0),
+        Category = {"bocw_submachineguns_body_flashwest"},
+    }
+}
+
+ARC9.LoadAttachment(ATT, "bocw_ksp45_mount_flashlight")
+
+--
+
+ATT = {}
+
+ATT.PrintName = "Laser Mount"
+ATT.CompactName = "LASER MNT"
+ATT.Icon = Material("entities/bocw_atts/mounts/lasermixbody.png", "mips smooth")
+ATT.Description = [[Barrel installed mount for laser body attachments on the Milano 821.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+ATT.Free = true
+
+ATT.Category = {"bocw_milano821_body"}
+
+ATT.Model = "models/weapons/arc9/atts/bocw_ksp45_mount_body.mdl"
+ATT.ModelBodygroups = "00"
+
+ATT.Scale = 0.9
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = "BODY",
+        Bone = "tag_weapon",
+        Pos = Vector(-1.4, 0, 1.7),
+        Ang = Angle(0, 0, 90),
+        Icon_Offset = Vector(0, 0, 0),
+        Category = {"bocw_submachineguns_body_laserwest", "bocw_submachineguns_body_mixwest"},
+    }
+}
+
+ARC9.LoadAttachment(ATT, "bocw_milano821_mount_lasermix")
+
+ATT = {}
+
+ATT.PrintName = "Flashlight Mount"
+ATT.CompactName = "FLASH MNT"
+ATT.Icon = Material("entities/bocw_atts/mounts/flashlight.png", "mips smooth")
+ATT.Description = [[Barrel installed mount for flashlights on the Milano 821.]]
+ATT.SortOrder = 1
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+ATT.Free = true
+
+ATT.Category = {"bocw_milano821_body"}
+
+ATT.Model = "models/weapons/arc9/atts/bocw_ksp45_mount_body.mdl"
+ATT.ModelBodygroups = "01"
+
+ATT.Scale = 0.9
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, -120)
+
+ATT.Attachments = {
+    {
+        PrintName = "BODY",
+        Bone = "tag_weapon",
+        Pos = Vector(-1, 1.87, -1.09),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0.65, 0, 0),
+        Category = {"bocw_submachineguns_body_flashwest"},
+    }
+}
+
+ARC9.LoadAttachment(ATT, "bocw_milano821_mount_flashlight")

@@ -385,7 +385,7 @@ ATT = {}
 ATT.PrintName = "Salvo 40 Rnd Fast Mag" --// 6
 ATT.CompactName = "40 RND FAST"
 ATT.Icon = Material("entities/bocw_atts/magazines/mp5_mixpro.png", "mips smooth")
-ATT.Description = [[Paracord pull loop improves reload speed. Contains 20 rounds.
+ATT.Description = [[Extended magazine with a steel pull loop to improve reload speed.
 
 The Salvo Fast Mag is a type of Magazine attachment available for most NATO weapons in Call of Duty: Black Ops Cold War. It functions as both as an Extended Magazine attachment and a Fast Mags attachment but at the cost of a drastically cut aim down sights time. The Warsaw Pact equivalent is the VDV Fast Mag.]]
 
@@ -780,7 +780,7 @@ ATT.CompactName = [[10.1" HEAVY]]
 ATT.Icon = Material("entities/bocw_atts/barrels/milano821_reinforced.png", "mips smooth")
 ATT.Description = [[Heavy profile barrel button rifled to improve bullet velocity and damage range.
 
-The Reinforced Heavy barrel is an attachment type available for NATO related Assault Rifles, Submachine Guns, Pistols and Shotguns in Call of Duty: Black Ops Cold War. It increases damage range alongside increasing bullet velocity at the cost of movement speed while aiming and a minor decrease of sprinting speed, while for Shotguns it loses the bullet velocity in exchange for a fire rate increase. The Warsaw Pact equivalent is the VDV Reinforced Barrel, while the Krig 6 has access to the Contour Barrel in place of the Reinforced Heavy Barrel.]]
+The Reinforced Heavy barrel is an attachment type available for NATO related Assault Rifles, Submachine Guns, Pistols and Shotguns in Call of Duty: Black Ops Cold War. It increases damage range alongside increasing bullet velocity at the cost of movement speed while aiming and a minor decrease of sprinting speed, while for Shotguns it loses the bullet velocity in exchange for a fire rate increase. The Warsaw Pact equivalent is the VDV Reinforced Barrel.]]
 
 ATT.SortOrder = 10.1
 
@@ -1692,7 +1692,7 @@ ATT = {}
 ATT.PrintName = "Spetsnaz 50 Rnd Drum" --// 4
 ATT.CompactName = "50 RND"
 ATT.Icon = Material("entities/bocw_atts/magazines/ak74u_extpro.png", "mips smooth")
-ATT.Description = [[High-capacity drum magazine contains 35 rounds of ammunition.
+ATT.Description = [[High-capacity drum magazine contains 50 rounds of ammunition.
 
 The Spetsnaz is a type of Magazine attachment available for some Warsaw Pact weapons in Call of Duty: Black Ops Cold War. It acts as a high capacity mag, giving more ammo but giving the added downside of a worse aiming time. The NATO equivalent is the STANAG Mag, alongside the Bakelite Mag which is also Warsaw Pact.]]
 
@@ -2144,7 +2144,7 @@ ATT.CompactName = [[10.5" HEAVY]]
 ATT.Icon = Material("entities/bocw_atts/barrels/ksp45_reinforced.png", "mips smooth")
 ATT.Description = [[Heavy profile barrel button rifled to improve bullet velocity and damage range.
 
-The Reinforced Heavy barrel is an attachment type available for NATO related Assault Rifles, Submachine Guns, Pistols and Shotguns in Call of Duty: Black Ops Cold War. It increases damage range alongside increasing bullet velocity at the cost of movement speed while aiming and a minor decrease of sprinting speed, while for Shotguns it loses the bullet velocity in exchange for a fire rate increase. The Warsaw Pact equivalent is the VDV Reinforced Barrel, while the Krig 6 has access to the Contour Barrel in place of the Reinforced Heavy Barrel.]]
+The Reinforced Heavy barrel is an attachment type available for NATO related Assault Rifles, Submachine Guns, Pistols and Shotguns in Call of Duty: Black Ops Cold War. It increases damage range alongside increasing bullet velocity at the cost of movement speed while aiming and a minor decrease of sprinting speed, while for Shotguns it loses the bullet velocity in exchange for a fire rate increase. The Warsaw Pact equivalent is the VDV Reinforced Barrel.]]
 
 ATT.SortOrder = 10.5
 
@@ -3575,7 +3575,7 @@ ARC9.LoadAttachment(ATT, "bocw_mp5_muzzle_base")
 ATT = {}
 
 ATT.PrintName = "AK-74U Muzzle Device"
-ATT.CompactName = "74U MUZZLE"
+ATT.CompactName = "MUZZLE"
 ATT.Icon = Material("entities/bocw_atts/muzzles/ak74u_base.png", "mips smooth")
 ATT.Description = [[Default AK-74u muzzle device.]]
 
@@ -3598,7 +3598,7 @@ ARC9.LoadAttachment(ATT, "bocw_ak74u_muzzle_base")
 ATT = {}
 
 ATT.PrintName = "KSP 45 Muzzle Device"
-ATT.CompactName = "KSP MUZZLE"
+ATT.CompactName = "MUZZLE"
 ATT.Icon = Material("entities/bocw_atts/muzzles/ksp45_base.png", "mips smooth")
 ATT.Description = [[Default KSP 45 muzzle device.]]
 
@@ -3773,3 +3773,69 @@ ATT.Attachments = {
 }
 
 ARC9.LoadAttachment(ATT, "bocw_milano821_mount_flashlight")
+
+--
+
+ATT = {}
+
+ATT.PrintName = "Laser Mount"
+ATT.CompactName = "LASER MNT"
+ATT.Icon = Material("entities/bocw_atts/mounts/lasermixbody.png", "mips smooth")
+ATT.Description = [[Barrel installed mount for laser body attachments on the Bullfrog.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+ATT.Free = true
+
+ATT.Category = {"bocw_bullfrog_body"}
+
+ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_mount_body.mdl"
+ATT.ModelBodygroups = "00"
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = "BODY",
+        Bone = "tag_weapon",
+        Pos = Vector(-2, 0.24, -0.25),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        Category = {"bocw_submachineguns_body_lasereast", "bocw_submachineguns_body_mixeast"},
+    }
+}
+
+ARC9.LoadAttachment(ATT, "bocw_bullfrog_mount_lasermix")
+
+ATT = {}
+
+ATT.PrintName = "Flashlight Mount"
+ATT.CompactName = "FLASH MNT"
+ATT.Icon = Material("entities/bocw_atts/mounts/flashlight.png", "mips smooth")
+ATT.Description = [[Barrel installed mount for flashlights on the Bullfrog.]]
+ATT.SortOrder = 1
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+ATT.Free = true
+
+ATT.Category = {"bocw_bullfrog_body"}
+
+ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_mount_body.mdl"
+ATT.ModelBodygroups = "01"
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = "BODY",
+        Bone = "tag_weapon",
+        Pos = Vector(-2, 0.75, -0.55),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        Category = {"bocw_submachineguns_body_flasheast"},
+    }
+}
+
+ARC9.LoadAttachment(ATT, "bocw_bullfrog_mount_flashlight")

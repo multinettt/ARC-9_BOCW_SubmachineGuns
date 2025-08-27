@@ -674,10 +674,20 @@ SWEP.Attachments = {
         CosmeticOnly = true,
     },
     {
-        PrintName = "STICKER 3",
+        PrintName = "STICKER 3", 
+        Bone = "tag_clip",
         Category = "stickers",
         StickerModel = "models/weapons/arc9/stickers/bocw_milano821_sticker3.mdl",
         CosmeticOnly = true,
+        ExcludeElements = {"milano821_mag_ext"}
+    },
+    {
+        PrintName = "STICKER 3", 
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_milano821_sticker3_ext.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"milano821_mag_ext"}
     },
 }
 

@@ -179,8 +179,9 @@ SWEP.Firemodes = {
         RunawayBurst = true,
         PostBurstDelay = 0.088,
         FirstShootSound = "ARC9_BOCW.KSP45_fire_burst",
-        FirstShootSoundSilenced = "ARC9_BOCW.KSP45_fire_silenced_burst",
-        ShootSound = nil
+        FirstShootSoundSilenced = nil,
+        ShootSound = nil,
+        ShootSoundSilenced = "ARC9_BOCW.KSP45_fire_silenced"
     },
     {
         Mode = -1,

@@ -420,7 +420,7 @@ SWEP.SightMidPoint = {
 
 -- Position for customizing
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(13, 35, 3)
+SWEP.CustomizePos = Vector(13, 35, 4)
 SWEP.CustomizeRotateAnchor = Vector(13, 0, -3)
 
 SWEP.CustomizeSnapshotFOV = 70
@@ -734,12 +734,12 @@ SWEP.Animations = {
         Source = "draw",
         IKTimeLine = {
             {
-                t = 0,
-                lhik = 1,
+                t = 0.5,
+                lhik = 0,
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.6,
                 lhik = 1,
                 rhik = 0
             },
@@ -754,12 +754,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.4,
+                t = 0.6,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.5,
+                t = 0.7,
                 lhik = 1,
                 rhik = 0
             },
@@ -785,7 +785,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.65,
+                t = 0.8,
                 lhik = 1,
                 rhik = 0
             },
@@ -954,7 +954,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.95,
+                t = 0.9,
                 lhik = 1,
                 rhik = 0
             },
@@ -982,12 +982,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.8,
+                t = 0.85,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.9,
+                t = 0.95,
                 lhik = 1,
                 rhik = 0
             },
@@ -1022,7 +1022,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.95,
+                t = 0.9,
                 lhik = 1,
                 rhik = 0
             },
@@ -1086,12 +1086,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.85,
+                t = 0.8,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.95,
+                t = 0.85,
                 lhik = 1,
                 rhik = 0
             },
@@ -1124,22 +1124,17 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.2,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.25,
+                t = 0.1,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.45,
+                t = 0.9,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.5,
+                t = 0.95,
                 lhik = 1,
                 rhik = 0
             },

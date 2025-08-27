@@ -763,12 +763,12 @@ SWEP.Animations = {
         Source = "draw",
         IKTimeLine = {
             {
-                t = 0,
-                lhik = 1,
+                t = 0.4,
+                lhik = 0,
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.5,
                 lhik = 1,
                 rhik = 0
             },
@@ -783,12 +783,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.4,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.5,
+                t = 1,
                 lhik = 1,
                 rhik = 0
             },
@@ -808,12 +803,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.6,
+                t = 0.7,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.65,
+                t = 0.75,
                 lhik = 1,
                 rhik = 0
             },
@@ -833,12 +828,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.6,
+                t = 0.7,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.65,
+                t = 0.75,
                 lhik = 1,
                 rhik = 0
             },
@@ -900,7 +895,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.9,
+                t = 0.95,
                 lhik = 1,
                 rhik = 0
             },
@@ -926,17 +921,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.1,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.85,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.95,
+                t = 1,
                 lhik = 1,
                 rhik = 0
             },
@@ -959,7 +944,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.2,
+                t = 0.1,
                 lhik = 0,
                 rhik = 0
             },
@@ -1028,7 +1013,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.2,
+                t = 0.1,
                 lhik = 0,
                 rhik = 0
             },
@@ -1060,7 +1045,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.2,
+                t = 0.1,
                 lhik = 0,
                 rhik = 0
             },
@@ -1240,12 +1225,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.2,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.25,
+                t = 0.1,
                 lhik = 0,
                 rhik = 0
             },

@@ -134,7 +134,7 @@ SWEP.TracerSize = 0.5
 
 SWEP.Ammo = "ar2" -- What ammo type this gun uses.
 
-SWEP.ChamberSize = 0 -- The amount of rounds this gun can chamber.
+SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 30 -- Self-explanatory.
 SWEP.SupplyLimit = 4 -- Amount of magazines of ammo this gun can take from an ARC-9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
@@ -836,7 +836,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.65,
+                t = 0.8,
                 lhik = 1,
                 rhik = 0
             },
@@ -964,12 +964,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.8,
+                t = 0.85,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.9,
+                t = 0.95,
                 lhik = 1,
                 rhik = 0
             },

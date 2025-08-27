@@ -561,12 +561,12 @@ SWEP.AttachmentSlotMods = {
 
 -- Adjust the stats of specific attachments when applied to this gun
 SWEP.AttachmentTableOverrides = {
-    ["bocw_body_flashlight_west"] = {
-        ModelOffset = Vector(0,0,-0.45),
+    ["bocw_submachineguns_body_flashlightwest"] = {
+        ModelOffset = Vector(0,-0.43,0),
         Scale = 1,
     },
-    ["bocw_body_flashlightpro_west"] = {
-        ModelOffset = Vector(0,0,-0.45),
+    ["bocw_submachineguns_body_flashlightprowest"] = {
+        ModelOffset = Vector(0,-0.43,0),
         Scale = 1,
     },
     ["bocw_optic_visiontech2x"] = {
@@ -632,10 +632,10 @@ SWEP.Attachments = {
     {
         PrintName = "BODY",
         Bone = "tag_weapon",
-        Pos = Vector(9, 0.94, 4.64),
-        Ang = Angle(0, 0, -105),
+        Pos = Vector(8.8, 0.94, 4.62),
+        Ang = Angle(0, 0, -15),
         Icon_Offset = Vector(0, 0, 0),
-        Category = {"bocw_xm4_body", "bocw_body_flashlight_west"},
+        Category = {"bocw_submachineguns_body_west"},
         InstalledElements = {"bodymount"},
     },
     {
@@ -644,7 +644,7 @@ SWEP.Attachments = {
         Pos = Vector(-11, -4.42, 6.75),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(20.25, 4.5, -5),
-        Category = {"bocw_mp5_underbarrel", "bocw_smg_underbarrel_west"},
+        Category = {"bocw_smg_underbarrel_west"},
     },
     {
         PrintName = "MAGAZINE",

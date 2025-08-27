@@ -3552,7 +3552,7 @@ ARC9.LoadAttachment(ATT, "bocw_bullfrog_stock_kgbskeletal")
 ATT = {}
 
 ATT.PrintName = "MP5 Muzzle Device"
-ATT.CompactName = "MP5 MUZZLE"
+ATT.CompactName = "MUZZLE"
 ATT.Icon = Material("entities/bocw_atts/muzzles/mp5_base.png", "mips smooth")
 ATT.Description = [[Default MP5 muzzle device.]]
 

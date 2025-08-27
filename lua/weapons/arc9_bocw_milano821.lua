@@ -197,13 +197,13 @@ SWEP.RecoilResetTime = 0.1 -- How long the gun must go before the recoil pattern
 SWEP.RecoilAutoControl = 2
 SWEP.RecoilKick = 2
 
-SWEP.Spread = math.rad(1.3 / 37.5)
-SWEP.SpreadMultRecoil = 1.2
+SWEP.Spread = math.rad(1 / 37.5)
+SWEP.SpreadMultRecoil = 1.8
 
 SWEP.SpreadMultSights = 0.1
-SWEP.SpreadAddHipFire = math.rad(180 / 37.5)
+SWEP.SpreadAddHipFire = math.rad(80 / 37.5)
 SWEP.SpreadAddMove = math.rad(100 / 37.5)
-SWEP.SpreadAddMidAir = 0.1
+SWEP.SpreadAddMidAir = math.rad(100 / 37.5)
 -- SWEP.SpreadAddShooting = math.rad(5 / 37.5) -- math.rad(108 / 37.5)
 
 SWEP.RecoilPatternDrift = 10
@@ -245,10 +245,10 @@ SWEP.ShootWhileSprint = false
 
 SWEP.Speed = 1
 
-SWEP.SpeedMult = 0.95
-SWEP.SpeedMultSprint = 0.706
-SWEP.SpeedMultSights = 0.395
-SWEP.SpeedMultShooting = 0.85
+SWEP.SpeedMult = 1
+SWEP.SpeedMultSprint = 0.685185185185185
+SWEP.SpeedMultSights = 0.7916666666666667
+SWEP.SpeedMultShooting = 0.95
 SWEP.SpeedMultMelee = 0.8
 SWEP.SpeedMultCrouch = 1
 --SWEP.SpeedMultBlindFire = 1
@@ -321,12 +321,10 @@ SWEP.BreathRunOutSound = "arc9/breath_runout.wav"
 SWEP.MuzzleParticle = "muzzleflash_1" -- Used for some muzzle effects.
 --SWEP.MuzzleEffect = "MuzzleFlash"
 
-SWEP.NoShellEject = true
-
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 
 SWEP.ShellSmoke = true
-SWEP.NoShellEject = true
+SWEP.NoShellEject = false
 
 SWEP.ShellScale = 1.2
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
@@ -496,7 +494,7 @@ SWEP.AttachmentElements = {
     ["barrel_cavalry"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(10.06, 0, 0),
+                Pos = Vector(9.98, 0, 0),
             },
         },
     },
@@ -548,6 +546,10 @@ SWEP.AttachmentTableOverrides = {
         ModelOffset = Vector(0,0.02,-0.98),
         Scale = 1,
     },
+    ["bocw_submachineguns_muzzle_silencer_west"] = {
+        ModelOffset = Vector(-1.27,0,0),
+        Scale = 1,
+    },
     ["bocw_optic_visiontech2x"] = {
         VisualRecoil = 0.1
     },
@@ -592,10 +594,10 @@ SWEP.Attachments = {
     {
         PrintName = "MUZZLE",
         Bone = "tag_barrel",
-        Pos = Vector(8.24, 0, 0),
+        Pos = Vector(8.21, 0, -0.02),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        Category = {"bocw_milano821_muzzle", "bocw_smg_muzzle_west9"},
+        Category = {"bocw_milano821_muzzle"},
     },
     {
         PrintName = "BARREL",

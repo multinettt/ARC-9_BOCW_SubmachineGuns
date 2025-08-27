@@ -247,10 +247,10 @@ SWEP.ShootWhileSprint = false
 
 SWEP.Speed = 1
 
-SWEP.SpeedMult = 0.95
-SWEP.SpeedMultSprint = 0.706
-SWEP.SpeedMultSights = 0.395
-SWEP.SpeedMultShooting = 0.85
+SWEP.SpeedMult = 1
+SWEP.SpeedMultSprint = 0.685185185185185
+SWEP.SpeedMultSights = 0.7916666666666667
+SWEP.SpeedMultShooting = 0.95
 SWEP.SpeedMultMelee = 0.8
 SWEP.SpeedMultCrouch = 1
 --SWEP.SpeedMultBlindFire = 1
@@ -323,12 +323,10 @@ SWEP.BreathRunOutSound = "arc9/breath_runout.wav"
 SWEP.MuzzleParticle = "muzzleflash_1" -- Used for some muzzle effects.
 --SWEP.MuzzleEffect = "MuzzleFlash"
 
-SWEP.NoShellEject = true
-
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 
 SWEP.ShellSmoke = true
-SWEP.NoShellEject = true
+SWEP.NoShellEject = false
 
 SWEP.ShellScale = 1.2
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)

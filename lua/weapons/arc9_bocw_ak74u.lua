@@ -157,10 +157,10 @@ SWEP.DropMagazineSounds = {} -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
 SWEP.DropMagazineSkin = 0 -- Model skin of mag.
 SWEP.DropMagazineTime = 2
-SWEP.DropMagazineQCA = nil -- QC Attachment drop mag from, would drop from shell port if not defined
-SWEP.DropMagazinePos = Vector(-40, -30, 5) -- offsets
-SWEP.DropMagazineAng = Angle(0, -90, 0)
-SWEP.DropMagazineVelocity = Vector(-200, -200, 0) -- Put something here if your anim throws the mag with force
+SWEP.DropMagazineQCA = 4 -- QC Attachment drop mag from, would drop from shell port if not defined
+SWEP.DropMagazinePos = Vector(0, 0, 0) -- offsets
+SWEP.DropMagazineAng = Angle(0, -90, -45)
+SWEP.DropMagazineVelocity = Vector(-100, 20, 0) -- Put something here if your anim throws the mag with force
 
 -------------------------- FIREMODES
 
@@ -213,15 +213,15 @@ SWEP.RecoilPatternDrift = 40
 SWEP.UseVisualRecoil = true
 
 SWEP.VisualRecoil = 1
-SWEP.VisualRecoilMultSights = 0.4
+SWEP.VisualRecoilMultSights = 1.2
 
-SWEP.VisualRecoilUp = 0.25
-SWEP.VisualRecoilSide = -0.1
+SWEP.VisualRecoilUp = 0.1
+SWEP.VisualRecoilSide = 0
 SWEP.VisualRecoilRoll = 0.1
 
 SWEP.VisualRecoilCenter = Vector(0, 0, 0)
 
-SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilPunch = 0.8
 SWEP.VisualRecoilPunchMultSights = 1
 
 
@@ -353,8 +353,6 @@ SWEP.BobSprintMult = 0.1
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     "tag_bullet_deplete_sqtl_00_animate",
     "tag_bullet_deplete_sqtl_01_animate",
-    "tag_bullet_deplete_sqtl_02_animate",
-    "tag_bullet_deplete_sqtl_03_animate"
 }
 SWEP.CaseBones = {}
 -- Unlike BulletBones, these bones are determined by the missing bullet amount when reloading
@@ -371,6 +369,8 @@ SWEP.HideBones = {
     "tag_clip1"
 } -- bones to hide in third person and customize menu. {"list", "of", "bones"}
 SWEP.ReloadHideBoneTables = {
+    [1] = {"tag_clip1"},
+    [2] = {"tag_clip", "tag_bullet_deplete_sqtl_00_animate", "tag_bullet_deplete_sqtl_01_animate"}
 }
 
 SWEP.PoseParameters = {} -- Poseparameters to manage. ["parameter"] = starting value.
@@ -875,6 +875,7 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.AK74u_reload_maggrab", t = 0.9 },
             { s = "ARC9_BOCW.AK74u_reload_magin", t = 1.6 },
             { s = "ARC9_BOCW.AK74u_reload_end", t = 2.2 },
+            { hide = 1, t = 0 },
         },
         IKTimeLine = {
             {
@@ -903,7 +904,7 @@ SWEP.Animations = {
         Source = "reload_empty",
         Time = 3.13,
         MinProgress = 0.55,
-        DropMagAt = 0.6,
+        DropMagAt = 1.3,
         MagSwapTime = 1,
         EventTable = {
             { s = "ARC9_BOCW.AK74u_reload_empty_magout", t = 0.6 },
@@ -911,6 +912,10 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.AK74u_boltback", t = 2 },
             { s = "ARC9_BOCW.AK74u_boltrelease", t = 2.2 },
             { s = "ARC9_BOCW.AK74u_reload_empty_end", t = 2.5 },
+            { hide = 0, t = 0 },
+            { hide = 2, t = 1.3 },
+            { hide = 0, t = 2.4 },
+            { hide = 1, t = 2.7 },
         },
         IKTimeLine = {
             {
@@ -934,6 +939,7 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.AK74u_reload_ext_maggrab", t = 0.9 },
             { s = "ARC9_BOCW.AK74u_reload_ext_magin", t = 1.6 },
             { s = "ARC9_BOCW.AK74u_reload_end", t = 2.2 },
+            { hide = 1, t = 0 },
         },
         IKTimeLine = {
             {
@@ -971,6 +977,7 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.AK74u_boltback", t = 2.2 },
             { s = "ARC9_BOCW.AK74u_boltrelease", t = 2.4 },
             { s = "ARC9_BOCW.AK74u_reload_empty_end", t = 2.7 },
+            { hide = 1, t = 0 },
         },
         IKTimeLine = {
             {
@@ -1003,6 +1010,7 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.AK74u_reload_magout", t = 0.15 },
             { s = "ARC9_BOCW.AK74u_reload_magin", t = 1.3 },
             { s = "ARC9_BOCW.AK74u_reload_end", t = 2.2 },
+            { hide = 1, t = 0 },
         },
         IKTimeLine = {
             {
@@ -1035,6 +1043,7 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.AK74u_reload_magout", t = 0.15 },
             { s = "ARC9_BOCW.AK74u_reload_magin", t = 1.3 },
             { s = "ARC9_BOCW.AK74u_reload_end", t = 2.2 },
+            { hide = 1, t = 0 },
         },
         IKTimeLine = {
             {
@@ -1069,6 +1078,7 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.AK74u_boltback", t = 2 },
             { s = "ARC9_BOCW.AK74u_boltrelease", t = 2.2 },
             { s = "ARC9_BOCW.AK74u_reload_end", t = 2.7 },
+            { hide = 1, t = 0 },
         },
         IKTimeLine = {
             {
@@ -1097,13 +1107,14 @@ SWEP.Animations = {
         Source = "reload_dual2_empty",
         Time = 3.13,
         MinProgress = 0.5,
-        DropMagAt = 1.1,
+        DropMagAt = 1,
         EventTable = {
             { s = "ARC9_BOCW.AK74u_reload_magout", t = 0.15 },
             { s = "ARC9_BOCW.AK74u_reload_magin", t = 1.3 },
             { s = "ARC9_BOCW.AK74u_boltback", t = 2 },
             { s = "ARC9_BOCW.AK74u_boltrelease", t = 2.2 },
             { s = "ARC9_BOCW.AK74u_reload_end", t = 2.7 },
+            { hide = 1, t = 0 },
         },
         IKTimeLine = {
             {
@@ -1132,6 +1143,7 @@ SWEP.Animations = {
         Source = "reload_mix_empty",
         Time = 3.13,
         MinProgress = 0.5,
+        DropMagAt = 0.6,
         EventTable = {
             { s = "ARC9_BOCW.AK74u_reload_magout", t = 0.2 },
             { s = "ARC9_BOCW.AK74u_reload_maggrab", t = 0.9 },
@@ -1139,6 +1151,7 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.AK74u_boltback", t = 2.2 },
             { s = "ARC9_BOCW.AK74u_boltrelease", t = 2.4 },
             { s = "ARC9_BOCW.AK74u_reload_empty_end", t = 2.7 },
+            { hide = 1, t = 0 },
         },
         IKTimeLine = {
             {

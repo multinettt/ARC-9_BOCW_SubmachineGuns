@@ -258,6 +258,7 @@ ATT.SortOrder = 1
 ATT.Category = "bocw_mp5_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_mp5_magazine_ext1.mdl"
+ATT.DropMagazineModelOverride = "models/weapons/arc9/atts/bocw_mp5_magazine_ext1.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -285,6 +286,7 @@ ATT.SortOrder = 2
 ATT.Category = "bocw_mp5_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_mp5_magazine_dual1.mdl"
+ATT.DropMagazineModelOverride = "models/weapons/arc9/atts/bocw_mp5_magazine_dual1.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -310,6 +312,7 @@ ATT.SortOrder = 3
 ATT.Category = "bocw_mp5_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_mp5_magazine_mix1.mdl"
+ATT.DropMagazineModelOverride = "models/weapons/arc9/atts/bocw_mp5_magazine_mix1.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -338,6 +341,7 @@ ATT.SortOrder = 4
 ATT.Category = "bocw_mp5_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_mp5_magazine_extpro.mdl"
+ATT.DropMagazineModelOverride = "models/weapons/arc9/atts/bocw_mp5_magazine_extpro.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -366,6 +370,7 @@ ATT.SortOrder = 5
 ATT.Category = "bocw_mp5_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_mp5_magazine_dualpro.mdl"
+ATT.DropMagazineModelOverride = "models/weapons/arc9/atts/bocw_mp5_magazine_dualpro.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -394,6 +399,7 @@ ATT.SortOrder = 6
 ATT.Category = "bocw_mp5_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_mp5_magazine_mixpro.mdl"
+ATT.DropMagazineModelOverride = "models/weapons/arc9/atts/bocw_mp5_magazine_mixpro.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -948,6 +954,7 @@ ATT.SortOrder = 2
 ATT.Category = "bocw_milano821_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_milano821_magazine_fast1.mdl"
+ATT.DropMagazineModelOverride = "models/weapons/arc9/atts/bocw_milano821_magazine_fast1.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -1029,6 +1036,7 @@ ATT.SortOrder = 5
 ATT.Category = "bocw_milano821_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_milano821_magazine_fastpro.mdl"
+ATT.DropMagazineModelOverride = "models/weapons/arc9/atts/bocw_milano821_magazine_fastpro.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -1622,6 +1630,8 @@ ATT.SortOrder = 1
 ATT.Category = "bocw_ak74u_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_magazine_ext1.mdl"
+ATT.DropMagazineModelOverride = "models/weapons/arc9/atts/bocw_ak74u_magazine_ext1.mdl"
+ATT.DropMagazineVelocityOverride = Vector(0, 0, 0)
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -1649,6 +1659,8 @@ ATT.SortOrder = 2
 ATT.Category = "bocw_ak74u_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_magazine_dual1.mdl"
+ATT.DropMagazineModelOverride = "models/weapons/arc9/atts/bocw_ak74u_magazine_dual1.mdl"
+ATT.DropMagazineVelocityOverride = Vector(0, 0, 0)
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -1674,6 +1686,8 @@ ATT.SortOrder = 3
 ATT.Category = "bocw_ak74u_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_magazine_mix1.mdl"
+ATT.DropMagazineModelOverride = "models/weapons/arc9/atts/bocw_ak74u_magazine_mix1.mdl"
+ATT.DropMagazineVelocityOverride = Vector(0, 0, 0)
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -1701,6 +1715,8 @@ ATT.SortOrder = 4
 ATT.Category = "bocw_ak74u_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_magazine_extpro.mdl"
+ATT.DropMagazineModelOverride = "models/weapons/arc9/atts/bocw_ak74u_magazine_extpro.mdl"
+ATT.DropMagazineVelocityOverride = Vector(0, 0, 0)
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -1729,6 +1745,8 @@ ATT.SortOrder = 5
 ATT.Category = "bocw_ak74u_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_magazine_dualpro.mdl"
+ATT.DropMagazineModelOverride = "models/weapons/arc9/atts/bocw_ak74u_magazine_dualpro.mdl"
+ATT.DropMagazineVelocityOverride = Vector(0, 0, 0)
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -1757,6 +1775,8 @@ ATT.SortOrder = 6
 ATT.Category = "bocw_ak74u_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_ak74u_magazine_mixpro.mdl"
+ATT.DropMagazineModelOverride = "models/weapons/arc9/atts/bocw_ak74u_magazine_mixpro.mdl"
+ATT.DropMagazineVelocityOverride = Vector(0, 0, 0)
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -3137,6 +3157,7 @@ ATT.SortOrder = 2
 ATT.Category = "bocw_bullfrog_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_magazine_fast1.mdl"
+ATT.DropMagazineModelOverride = "models/weapons/arc9/atts/bocw_bullfrog_magazine_fast1.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -3218,6 +3239,7 @@ ATT.SortOrder = 5
 ATT.Category = "bocw_bullfrog_mag"
 
 ATT.Model = "models/weapons/arc9/atts/bocw_bullfrog_magazine_fastpro.mdl"
+ATT.DropMagazineModelOverride = "models/weapons/arc9/atts/bocw_bullfrog_magazine_fastpro.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)

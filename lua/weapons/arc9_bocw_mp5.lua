@@ -66,7 +66,7 @@ SWEP.MirrorVMWM = true
 SWEP.DefaultBodygroups = "00000000000000"
 
 SWEP.WorldModelOffset = {
-    Pos = Vector(-5, 3, -6.2),
+    Pos = Vector(-10, 3, -6.2),
     Ang = Angle(-10, 0, 180),
     Scale = 1
 }
@@ -158,10 +158,10 @@ SWEP.DropMagazineSounds = {} -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
 SWEP.DropMagazineSkin = 0 -- Model skin of mag.
 SWEP.DropMagazineTime = 2
-SWEP.DropMagazineQCA = nil -- QC Attachment drop mag from, would drop from shell port if not defined
-SWEP.DropMagazinePos = Vector(-40, -30, 5) -- offsets
-SWEP.DropMagazineAng = Angle(0, -90, 0)
-SWEP.DropMagazineVelocity = Vector(-200, -200, 0) -- Put something here if your anim throws the mag with force
+SWEP.DropMagazineQCA = 4 -- QC Attachment drop mag from, would drop from shell port if not defined
+SWEP.DropMagazinePos = Vector(0, 0, 0) -- offsets
+SWEP.DropMagazineAng = Angle(0, -90, -90)
+SWEP.DropMagazineVelocity = Vector(0, 0, 100) -- Put something here if your anim throws the mag with force
 
 -------------------------- FIREMODES
 
@@ -187,17 +187,18 @@ SWEP.Firemodes = {
 
 -------------------------- RECOIL
 
-SWEP.Recoil = 1.1
-SWEP.RecoilSide = 0.3
-SWEP.RecoilUp = 0.4
+SWEP.Recoil = 1
+SWEP.RecoilSide = -0.1
+SWEP.RecoilUp = 0.5
 
-SWEP.RecoilRandomUp = 0
-SWEP.RecoilRandomSide = 0
+SWEP.RecoilRandomUp = 0.01
+SWEP.RecoilRandomSide = 0.01
 
 SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0.1 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilFullResetTime = 0.25 -- How long recoil must stay after last shoot
 
-SWEP.RecoilAutoControl = 2
+SWEP.RecoilAutoControl = 0.1
 SWEP.RecoilKick = 2
 
 SWEP.Spread = math.rad(1 / 37.5)
@@ -209,20 +210,20 @@ SWEP.SpreadAddMove = math.rad(100 / 37.5)
 SWEP.SpreadAddMidAir = math.rad(100 / 37.5)
 -- SWEP.SpreadAddShooting = math.rad(5 / 37.5) -- math.rad(108 / 37.5)
 
-SWEP.RecoilPatternDrift = 10
+SWEP.RecoilPatternDrift = 40
 
 SWEP.UseVisualRecoil = true
 
 SWEP.VisualRecoil = 1
-SWEP.VisualRecoilMultSights = 0.4
+SWEP.VisualRecoilMultSights = 1.2
 
-SWEP.VisualRecoilUp = 0.25
-SWEP.VisualRecoilSide = -0.1
+SWEP.VisualRecoilUp = 0.1
+SWEP.VisualRecoilSide = 0
 SWEP.VisualRecoilRoll = 0.1
 
 SWEP.VisualRecoilCenter = Vector(0, 0, 0)
 
-SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilPunch = 0.8
 SWEP.VisualRecoilPunchMultSights = 1
 
 
@@ -324,12 +325,12 @@ SWEP.BreathRunOutSound = "arc9/breath_runout.wav"
 SWEP.MuzzleParticle = "muzzleflash_1" -- Used for some muzzle effects.
 --SWEP.MuzzleEffect = "MuzzleFlash"
 
-SWEP.ShellModel = "models/shells/shell_556.mdl"
+SWEP.ShellModel = "models/shells/shell_9mm.mdl"
 
 SWEP.ShellSmoke = true
 SWEP.NoShellEject = false
 
-SWEP.ShellScale = 1.2
+SWEP.ShellScale = 1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShellPitch = 100 -- for shell sounds
@@ -371,6 +372,7 @@ SWEP.StripperClipBGs = {}
 SWEP.HideBones = {
 } -- bones to hide in third person and customize menu. {"list", "of", "bones"}
 SWEP.ReloadHideBoneTables = {
+    [1] = {"tag_clip", "tag_bullet_deplete_sqtl_00_animate", "tag_bullet_deplete_sqtl_01_animate", "tag_bullet_deplete_sqtl_02_animate", "tag_bullet_deplete_sqtl_03_animate"},
 }
 
 SWEP.PoseParameters = {} -- Poseparameters to manage. ["parameter"] = starting value.
@@ -873,12 +875,16 @@ SWEP.Animations = {
         Time = 2.62,
         NoMagSwap = true,
         MinProgress = 0.75,
+        DropMagAt = 1.05,
         EventTable = {
             { s = "ARC9_BOCW.MP5_reload_boltgrab", t = 0.1 },
             { s = "ARC9_BOCW.MP5_reload_boltback", t = 0.15 },
             { s = "ARC9_BOCW.MP5_reload_magout", t = 0.5 },
             { s = "ARC9_BOCW.MP5_reload_magin", t = 1.7 },
             { s = "ARC9_BOCW.MP5_reload_boltrelease", t = 2.05 },
+            { hide = 0, t = 0 },
+            { hide = 1, t = 1.05 },
+            { hide = 0, t = 1.5 },
         },
         IKTimeLine = {
             {
@@ -907,7 +913,7 @@ SWEP.Animations = {
         Source = "reload_empty",
         Time = 3.75,
         MinProgress = 0.6,
-        DropMagAt = 0.6,
+        DropMagAt = 1.3,
         MagSwapTime = 1,
         EventTable = {
             { s = "ARC9_BOCW.MP5_reload_boltgrab", t = 0.1 },
@@ -915,6 +921,9 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.MP5_reload_magout", t = 0.8 },
             { s = "ARC9_BOCW.MP5_reload_magin", t = 1.95 },
             { s = "ARC9_BOCW.MP5_reload_boltrelease", t = 2.6 },
+            { hide = 0, t = 0 },
+            { hide = 1, t = 1.3 },
+            { hide = 0, t = 1.8 },
         },
         IKTimeLine = {
             {
@@ -943,12 +952,16 @@ SWEP.Animations = {
         Source = "reload_ext",
         Time = 2.62,
         MinProgress = 0.7,
+        DropMagAt = 1.05,
         EventTable = {
             { s = "ARC9_BOCW.MP5_reload_boltgrab", t = 0.1 },
             { s = "ARC9_BOCW.MP5_reload_boltback", t = 0.15 },
             { s = "ARC9_BOCW.MP5_reload_magout", t = 0.5 },
             { s = "ARC9_BOCW.MP5_reload_magin", t = 1.7 },
             { s = "ARC9_BOCW.MP5_reload_boltrelease", t = 2.1 },
+            { hide = 0, t = 0 },
+            { hide = 1, t = 1.05 },
+            { hide = 0, t = 1.5 },
         },
         IKTimeLine = {
             {
@@ -978,13 +991,16 @@ SWEP.Animations = {
         Time = 3.75,
         MinProgress = 0.55,
         MagSwapTime = 1,
-        DropMagAt = 0.6,
+        DropMagAt = 1.3,
         EventTable = {
             { s = "ARC9_BOCW.MP5_reload_boltgrab", t = 0.1 },
             { s = "ARC9_BOCW.MP5_reload_boltback", t = 0.15 },
             { s = "ARC9_BOCW.MP5_reload_magout", t = 0.8 },
             { s = "ARC9_BOCW.MP5_reload_magin", t = 2.1 },
             { s = "ARC9_BOCW.MP5_reload_boltrelease", t = 2.6 },
+            { hide = 0, t = 0 },
+            { hide = 1, t = 1.3 },
+            { hide = 0, t = 1.8 },
         },
         IKTimeLine = {
             {

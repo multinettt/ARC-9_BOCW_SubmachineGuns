@@ -186,15 +186,17 @@ SWEP.Firemodes = {
     {
         Mode = -1,
         FirstShootSound = nil,
-        ShootSound = "ARC9_BOCW.KSP45_fire"
+        ShootSound = "ARC9_BOCW.KSP45_fire",
+        RecoilSide = 0.3,
+        RecoilUp = 0.6
     },
 }
 
 -------------------------- RECOIL
 
-SWEP.Recoil = 1.1
-SWEP.RecoilSide = 0.3
-SWEP.RecoilUp = 0.4
+SWEP.Recoil = 1
+SWEP.RecoilSide = 0.1
+SWEP.RecoilUp = 0.1
 
 SWEP.RecoilRandomUp = 0
 SWEP.RecoilRandomSide = 0
@@ -202,7 +204,7 @@ SWEP.RecoilRandomSide = 0
 SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0.1 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 2
+SWEP.RecoilAutoControl = 0.1
 SWEP.RecoilKick = 2
 
 SWEP.Spread = math.rad(1 / 37.5)
@@ -214,20 +216,20 @@ SWEP.SpreadAddMove = math.rad(100 / 37.5)
 SWEP.SpreadAddMidAir = math.rad(100 / 37.5)
 -- SWEP.SpreadAddShooting = math.rad(5 / 37.5) -- math.rad(108 / 37.5)
 
-SWEP.RecoilPatternDrift = 10
+SWEP.RecoilPatternDrift = 30
 
 SWEP.UseVisualRecoil = true
 
 SWEP.VisualRecoil = 1
-SWEP.VisualRecoilMultSights = 0.4
+SWEP.VisualRecoilMultSights = 1.2
 
-SWEP.VisualRecoilUp = 0.25
-SWEP.VisualRecoilSide = -0.1
+SWEP.VisualRecoilUp = 0.1
+SWEP.VisualRecoilSide = 0
 SWEP.VisualRecoilRoll = 0.1
 
 SWEP.VisualRecoilCenter = Vector(0, 0, 0)
 
-SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilPunch = 0.8
 SWEP.VisualRecoilPunchMultSights = 1
 
 
@@ -329,7 +331,7 @@ SWEP.BreathRunOutSound = "arc9/breath_runout.wav"
 SWEP.MuzzleParticle = "muzzleflash_1" -- Used for some muzzle effects.
 --SWEP.MuzzleEffect = "MuzzleFlash"
 
-SWEP.ShellModel = "models/shells/shell_556.mdl"
+SWEP.ShellModel = "models/shells/shell_9mm.mdl"
 
 SWEP.ShellSmoke = true
 SWEP.NoShellEject = false
@@ -848,7 +850,6 @@ SWEP.Animations = {
         Source = "reload_empty",
         Time = 3.1,
         MinProgress = 0.55,
-        DropMagAt = 0.6,
         MagSwapTime = 1,
         EventTable = {
             { s = "ARC9_BOCW.KSP45_reload_start", t = 0 },
@@ -918,7 +919,6 @@ SWEP.Animations = {
         Time = 3.1,
         MinProgress = 0.55,
         MagSwapTime = 1,
-        DropMagAt = 0.6,
         EventTable = {
             { s = "ARC9_BOCW.KSP45_reload_start", t = 0 },
             { s = "ARC9_BOCW.KSP45_reload_magout", t = 0.3 },

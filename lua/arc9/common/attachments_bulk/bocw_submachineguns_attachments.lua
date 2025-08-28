@@ -2744,7 +2744,6 @@ ATT.SpreadMultHipFire = 1.3
 
 ARC9.LoadAttachment(ATT, "bocw_ksp45_stock_raider")
 --[[
-
 oooooooooo.              oooo  oooo   .o88o.                               
 `888'   `Y8b             `888  `888   888 `"                               
  888     888 oooo  oooo   888   888  o888oo  oooo d8b  .ooooo.   .oooooooo 

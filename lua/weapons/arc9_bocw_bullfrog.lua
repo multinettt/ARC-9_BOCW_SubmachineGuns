@@ -203,7 +203,7 @@ SWEP.Spread = math.rad(1 / 37.5)
 SWEP.SpreadMultRecoil = 1.8
 
 SWEP.SpreadMultSights = 0.1
-SWEP.SpreadAddHipFire = math.rad(150 / 37.5)
+SWEP.SpreadAddHipFire = math.rad(130 / 37.5)
 SWEP.SpreadAddMove = math.rad(100 / 37.5)
 SWEP.SpreadAddMidAir = math.rad(100 / 37.5)
 -- SWEP.SpreadAddShooting = math.rad(5 / 37.5) -- math.rad(108 / 37.5)
@@ -559,6 +559,14 @@ SWEP.AttachmentTableOverrides = {
     },
     ["bocw_submachineguns_body_laserproeast"] = {
         ModelOffset = Vector(0.55,0.35,0.25),
+        Scale = 1,
+    },
+    ["bocw_submachineguns_muzzle_silencer_east545"] = {
+        ModelOffset = Vector(-0.2,0,0),
+        Scale = 1,
+    },
+    ["bocw_submachineguns_muzzle_silencerpro_east545"] = {
+        ModelOffset = Vector(-0.2,0,0),
         Scale = 1,
     },
     ["bocw_optic_visiontech2x"] = {
